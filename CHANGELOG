@@ -1,3 +1,10 @@
+2.1
+   * Change the sections of manpages adding the -fun suffix, to avoid conflicts
+     with real man pages.
+
+     This had already been done, but the section indicated inside the man pages
+     did not match.
+   * Remove some whitespace from the man pages.
 2.0
-   * Import existing manpages from the original package
-   * Write Makefile to make install possible
+   * Import existing manpages from the original package.
+   * Write Makefile to make install possible.
