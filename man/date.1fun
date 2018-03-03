@@ -37,7 +37,7 @@ posts your vitals to alt.personals (and, optionally, alt.sex.wanted).
 .PP
 Using the
 .B \-k
-option selects a date, but does not make any further arrangments.
+option selects a date, but does not make any further arrangements.
 .PP
 Ranges are specified with parentheses and brackets: (18,25) is 18 to 25
 exclusive while [18,25] is 18 to 25 inclusive.
@@ -64,7 +64,7 @@ You must have access to the Internet for FTP to work.
 .IP
 If view=must is set, and
 .I date
-is unable to find a picture, a request will be automaticly posted to
+is unable to find a picture, a request will be automatically posted to
 alt.binaries.pictures.d asking for one.
 .IP
 Options to

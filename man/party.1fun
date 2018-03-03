@@ -20,7 +20,7 @@ each command is terminated by `No problem, dude.'
 .TP
 .B \-v
 Verbose mode  (ALL commands  have  a `verbose' mode). When  this  option
-is  present,  all filtered responses are  preceeded  by a message:
+is  present,  all filtered responses are  preceded  by a message:
 `This response has been parsed by the
 .B DUDE
 filter and is not intended to be some sort of sleazy come-on.'
@@ -28,7 +28,7 @@ filter and is not intended to be some sort of sleazy come-on.'
 .B \-d
 Don't  restart  all  processes  after  recompiling the
 .B /uselss/libs/eugene
-file (see below).   This alows any important tasks to complete beforehand.
+file (see below).   This allows any important tasks to complete beforehand.
 .TP
 .B \-n
 Notify  all  users  that  they  are about to be force-logged out and
