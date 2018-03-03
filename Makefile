@@ -33,4 +33,4 @@ dist:
 		funny-manpages/README.md \
 		funny-manpages/man
 	mv ../funny-manpages_`head -1 CHANGELOG`.orig.tar.gz .
-	gpg --sign --armor --detach-sign funny-manpages_*.orig.tar.gz
+	gpg --sign --armor --detach-sign funny-manpages_`head -1 CHANGELOG`.orig.tar.gz
