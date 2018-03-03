@@ -1,0 +1,32 @@
+This set of manpages was collected from all over the net. No specific
+location can be given.
+
+To the best of my knowledge all of these manpages are free to use and
+redistribute.
+
+This package was first created by Pawel Wiecek coven@pwr.wroc.pl on
+Wed, 10 Dec 1997 01:10:17 +0100.
+
+The authors are:
+man/baby.1fun       - unknown, based on man page by Joe Beck <beck@cs.ualberta.ca>
+man/celibacy.1fun   - unknown
+man/condom.1fun     - Ken Maupin <maupin@cs.washington.edu>
+man/date.1fun       - Glen Overby <overby@sendit.nodak.edu>
+man/echo.1fun       - unknown
+man/flame.1fun      - unknown
+man/flog.1fun       - unknown
+man/gong.1fun       - unknown
+man/grope.1fun      - unknown
+man/party.1fun      - unknown
+man/rescrog.1fun    - unknown
+man/rm.1fun         - Matthew Farwell <dylan@ibmpcug.co.uk>
+man/rtfm.1fun       - unknown
+man/sex.1fun        - unknown
+man/strfry.3fun     - <chuck@druco.att.com>
+man/tm.1fun         - unknown
+man/uubp.1fun       - unknown
+man/xkill.1fun      - Claudio Calvelli <Claudio@edinburgh.ac.uk>
+man/xlart.1fun      - James McPherson
+
+It is now maintained by Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>
+who owns the copyright for all the other files in the project.

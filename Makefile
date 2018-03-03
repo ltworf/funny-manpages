@@ -28,6 +28,7 @@ dist:
 	cd ..; tar -czf funny-manpages_`head -1 funny-manpages/CHANGELOG`.orig.tar.gz \
 		funny-manpages/Makefile \
 		funny-manpages/CHANGELOG \
+		funny-manpages/LICENSE \
 		funny-manpages/README.md \
 		funny-manpages/man
 	mv ../funny-manpages_`head -1 CHANGELOG`.orig.tar.gz .
