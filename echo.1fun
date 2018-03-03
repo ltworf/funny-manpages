@@ -1,0 +1,167 @@
+.\" -------
+.\" Reverse-engineered to [nt]roff source by DaviD W. Sanderson
+.\" -------
+.TH GNUecho 1
+.SH NAME
+echo \- echo arguments
+.SH SYNOPSIS
+.B echo
+.RI [ options ]...
+.SH DESCRIPTION
+.I Echo
+writes its arguments separated by blanks and terminated
+by a newline on the standard output.
+Options to filter and redirect the output are as follows:
+.TP
+.B \-2
+generate rhyming couplets from keywords
+.TP
+.B \-3
+generate Haiku verse from keywords
+.TP
+.B \-5
+generate limerick from keywords
+.TP
+.B \-a
+convert ASCII to ASCII
+.TP
+.B \-A
+disambiguate sentence structure
+.TP
+.B \-b
+generate bureaucratese equivalent (see
+.BR \-x )
+.TP
+.B \-B
+issue equivalent C code with bugs fixed
+.TP
+.B \-c
+simplify/calculate arithmetic expression(s)
+.TP
+.B \-C
+remove copyright notice(s)
+.TP
+.B \-d
+define new echo switch map
+.TP
+.B \-D
+delete all ownership information from system files
+.TP
+.B \-e
+evaluate lisp expression(s)
+.TP
+.B \-E
+convert ASCII to Navajo
+.TP
+.B \-f
+read input from file
+.TP
+.B \-F
+transliterate to french
+.TP
+.B \-g
+generate pseudo-revolutionary marxist catch-phrases
+.TP
+.B \-G
+prepend GNU manifesto
+.TP
+.B \-h
+halt system (reboot suppressed on Suns, Apollos, and VAXen,
+not supported on NOS-2)
+.TP
+.B \-i
+emulate IBM OS/VU (recursive universes not supported)
+.TP
+.B \-I
+emulate IBM VTOS 3.7.6
+(chronosynclastic infundibulae supported
+with restrictions documented in IBM VTOS Reference Manual rev 3.2.6)
+.TP
+.B \-J
+generate junk mail
+.TP
+.B \-j
+justify text (see
+.B \-b
+option)
+.TP
+.B \-k
+output "echo" software tools
+.TP
+.B \-K
+delete privileged accounts
+.TP
+.B \-l
+generate legalese equivalent
+.TP
+.B \-L
+load echo modules
+.TP
+.B \-M
+generate mail
+.TP
+.B \-N
+send output to all reachable networks (usable with
+.BR \-J ,
+.BR \-K ,
+.B \-h
+options)
+.TP
+.B \-n
+do not add newline to the output
+.TP
+.B \-o
+generate obscene text
+.TP
+.B \-O
+clean up dirty language
+.TP
+.B \-p
+decrypt and print /etc/passwd
+.TP
+.B \-P
+port echo to all reachable networks
+.TP
+.B \-P1
+oolcay itay
+.TP
+.B \-q
+query standard input for arguments
+.TP
+.B \-r
+read alternate ".echo" file on start up
+.TP
+.B \-R
+change root password to "RMS"
+.TP
+.B \-s
+suspend operating system during output (Sun and VAX BSD 4.2 only)
+.TP
+.B \-S
+translate to swahili
+.TP
+.B \-T
+emulate TCP/IP handler
+.TP
+.B \-t
+issue troff output
+.TP
+.B \-u
+issue unix philosophy essay
+.TP
+.B \-v
+generate reverberating echo
+.TP
+.B \-V
+print debugging information
+.TP
+.B \-x
+decrypt DES format messages
+(NSA secret algorithm CX 3.8, not distributed outside continental US)
+.PP
+.I Echo
+is useful for producing diagnostics in shell programs
+and for writing constant data on pipes.
+To send diagnostics to the standard error file, do `echo ... 1>&2'.
+.SH AUTHOR
+Richard M. Stallman

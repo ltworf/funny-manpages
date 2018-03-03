@@ -1,0 +1,123 @@
+.\"
+.TH RTFM 1 "July 27, 1997" "GNU Utilities"
+.SH NAME
+rtfm \- a response for easy questions from clueless lusers
+.SH SYNOPSIS
+.B rtfm 
+.B [ -p ] [ -h ] [ -d option ] [ -i interval ] [ -a action ] [ -q luser]
+.SH DESCRIPTION
+.B rtfm 
+is a command for system administrators to use in dealing with new users. 
+.B rtfm 
+is useful for dealing with users having trouble with their pictures downloaded 
+from alt.binaries.pictures.erotica. 
+.B rtfm 
+will continue to run until killed by hand, using `kill processid'.
+.B rtfm 
+can be invoked by anyone who has enough of a clue to know what a man page is.
+.SH OPTIONS
+.TP
+.B \-p 
+Give the answer in a polite fashion.
+.TP
+.B \-h 
+Tell the clueless luser to go to hell. Used with the -p option, 
+they'll look forward to the trip.
+.TP
+.B \-d option 
+Debug mode using option where option is one of the following:
+
+.I query
+Ask the luser what part of rtfm that he or she does not understand.
+
+.I planet
+Ask what planet the luser is from.
+  
+.I literacy
+Ask the luser if the luser can read.
+
+.I english
+Ask the luser if the luser understands English.
+
+.I Mac 
+Ask the luser if the luser has ever used a computer other than a Macintosh.
+
+.I Nintendo 
+Same as the Mac option, but slightly more harsh.
+.TP
+.B \-i interval
+Enable within interval seconds. interval is the time
+between a luser asking the same damn fool question.
+This option must be activated for the 
+.B \-a 
+option. It
+stores the time of the question in 
+.B /var/run/luser 
+and checks that file each time that rtfm is activated.
+interval is a number of minutes, of the form xxx.xx
+where each x is a decimal digit. The default is 5.00
+minutes.
+.TP
+.B \-a action
+This defines some action to be taken in the event that
+the 
+.B \-i 
+flag condition is met. action can be defined
+either at the flag level or by a file. The options for
+flags are as follows:
+
+.I scream
+Let out a scream of utter frustration.
+
+.I hair
+Rip out your hair in total frustration.
+
+.I rm
+Automatic command ran in lusers home directory. It
+can have an addition 
+.B \-rf 
+flag added.
+
+.I ignore
+Ignore the luser.
+
+.I warn
+Warn the other sysadmins.
+
+.I forward
+Forward to CNS advising. Particullary if the
+complaint is /dev/null is full.
+
+.I kill
+Kill all the lusers processes.
+
+.I FILE=file.name 
+Use a file to define a course of
+actions. This can be any executeable file except those
+using ksh, which no god-fearing right-thinking sysadmin
+would be caught using lest he be struck down by the
+wrath of God.
+.TP
+.B \-q luser
+Query file 
+.B /etc/luser 
+to see if luser is a real luser or a first time luser.
+.SH FILES
+.TP
+.B /etc/luser
+.SH SEE ALSO
+.TP
+.IR mr.biff (2),
+.SH BUGS
+.B rtfm 
+only checks
+.B /var/run/luser
+when the
+.B \-a
+option is specified and after the 
+.B \-i
+option is invoked. Otherwise 
+.B /tmp 
+would fill up rapidly on many systems. Also, core may dump if the 
+.B \-a FILE= 
+option is anatomically impossible.

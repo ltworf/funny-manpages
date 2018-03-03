@@ -1,0 +1,265 @@
+.\" From: dylan@ibmpcug.co.uk (Matthew Farwell)
+.\" Newsgroups: comp.unix.shell
+.\" Subject: Re: zsh (was: C shell brain damage)
+.\" Message-ID: <1991Nov24.165913.23349@ibmpcug.co.uk>
+.\" Date: 24 Nov 91 16:59:13 GMT
+.\" References: <peter.690989546@auad>
+.\" Reply-To: dylan@ibmpcug.co.uk (Matthew Farwell)
+.\" Organization: The IBM PC User Group, UK.
+.\" Lines: 152
+.\" 
+.\" In article <peter.690989546@auad> peter@auad.acadiau.ca (Peter Steele) writes:
+.\" >>>>Hmm. Do you mean to say you are supporting csh programmers on your system?
+.\" >>>>If so, I suggest you get 'em to "unlearn" csh and move to something more
+.\" >>>>reliable. Someone should write a Nutshell handbook on the evils of csh and
+.\" >>>>so prevent many future disasters ... (you wanna do it Tom?).
+.\" >We have dozens of csh programmers here and not one have come to me with
+.\" >some weird unexplainable problem.
+.\" 
+.\" I notice you use the words 'weird' and 'unexplainable' in the same
+.\" sentence. Everything to do with csh is very explainable. 'Its csh'
+.\" usually does the trick. As for being weird, explaining that is easy
+.\" too. 'Its csh' usually does the trick :-)
+.\" 
+.\" >                                  One thing to note is that most perceive
+.\" >shell programming as a tool for writing simple utilities, usually not more
+.\" >than a page or two long. If the job requires something more than that,
+.\" >they'll use something better suited to the task like C.
+.\" 
+.\" I disagree. There are lots of features in say awk and perl which makes
+.\" them better suited to certain things than C. String manipulation for
+.\" instance. Anything which uses associative arrays. Perl often turns out
+.\" faster than C in some areas because of the high degree of optimisation.
+.\" Most people haven't got the time to spend optimising stuff to the degree
+.\" that perl is optimised.
+.\" 
+.\" >I use C-shell, Boune shell, Perl, and C, although after reading Tom C.'s
+.\" >"reasons not to program in C-shell", I'll probably refrain from writing
+.\" >any more C-shell scripts....
+.\" 
+.\" Good idea.
+.\" 
+.\" Dylan.
+.\" -- 
+.\" dylan@ibmpcug.co.uk || ...!uunet!uknet!ibmpcug!dylan
+.\" I teleported home one day, with ron and sid and meg
+.\" Ron stole meggies heart away, and I got sidneys leg.
+.\" 
+.\" (From the Ada rm(1) manual page...)
+.TH RM 1
+.SH NAME
+rm \- remove files
+.SH SYNOPSIS
+.B rm
+.RB [ \-fri ]
+.\" .RB [ \-C [ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ]]
+.RB [ \-C [ 2ABCFGMRSbcfjlmnpru ]]
+.IR file ...
+.SH DESCRIPTION
+The command
+.I rm
+deletes each file argument from the system.
+There are a large number of options:
+.TP
+.B \-f
+Forced remove.
+Unwritable files are removed without
+.I rm
+asking permission.
+By default,
+.I rm
+will ask permission before removing unwritable files.
+.TP
+.B \-r
+Recursive remove.
+For each argument which is a directory,
+.I rm
+will recursively remove the entire hierarchy below it.
+If this was successful,
+the directory itself is removed.
+.TP
+.B \-i
+Interactive remove.
+.I rm
+will ask permission before removing anything.
+.TP
+.B \-C
+Remove
+.I csh
+files.
+.I csh
+files are those files that have an extension of .csh.
+When
+.B -C
+is used, the
+.B \-f
+and
+.B \-r
+flags are turned on, and ``/'' is used for the
+.I file
+argument.
+.TP
+\&
+There are a host of modifiers:
+.TP
+.B \-2
+Translate
+.I csh
+source files to Modula 2.
+The extension is changed to .m2.
+.TP
+.B \-A
+Purge accounts of all users who had
+.I csh
+source files in
+their account, or had used the
+.I csh
+this week.
+.TP
+.B \-B
+Replace removed files with copies of the current bug
+list for the
+.I csh
+that can execute that particular file.
+In the unlikely event that more than one
+.I csh
+can execute the file,
+buglists are catenated together.
+WARNING: This can consume an inordinate amount of disk
+space.
+.TP
+.B \-C
+Remove all
+.I csh
+shells from the system.
+.TP
+.B \-F
+Flame option.
+After removing files, make a posting to
+comp.unix.shell describing exactly how well
+.I csh
+works.
+.TP
+.B \-G
+Replace removed files with copies of the GNU manifesto.
+.TP
+.B \-M
+Mail source files to rms@mit-prep.mit.edu before removing.
+.TP
+.B \-R
+Raw eggs option.
+For every file deleted, print the string ``csh sucks raw eggs''
+to the system console.
+.TP
+.B \-S
+Script option.
+Delete shell scripts that call the
+.I csh
+shell too.
+.TP
+.B \-b
+Beat option.
+Don't simply delete
+.I csh
+shells,
+beat them to death with a stick first.
+.TP
+.B \-c
+Don't remove
+.I csh
+source files,
+instead convert them to C++.
+The extension is changed .c++.
+If this option is used in conjunction with the
+.B \-G
+option,
+the Gnu copyright is prepended to the file when translated.
+.TP
+.B \-f
+Force option.
+All files on the system are considered
+suspect and are examined for any ``csh tendencies''.
+Files containing any ``csh tendencies'' will be deleted.
+This is the only way to delete makefiles for
+.I csh
+programs.
+.TP
+.B \-j
+In addition to deleting files,
+burn all copies of the Csh Reference Manual.
+.TP
+.B \-l
+Lose option.
+This can only be used in conjunction with
+the
+.B \-C
+option.
+Instead of deleting
+.I csh
+shells,
+replace them with a shell script that prints ``You Lose!''
+when invoked.
+.TP
+.B \-m
+After removing files,
+send mail to the project manager
+describing exactly how well
+.I csh
+shells work.
+If this option is used,
+a resume is also posted to misc.jobs.resumes.
+.TP
+.B \-n
+Network option.
+Don't limit deletion to the machine
+.I rm
+was invoked from,
+delete all
+.I csh
+files from the entire network.
+.TP
+.B \-p
+Pascal option.
+Translate
+.I csh
+source files to Pascal.
+The extension is changed to .p.
+.TP
+.B \-r
+Run /usr/games/rogue while deleting
+.I csh
+files.
+.TP
+.B \-u
+UUCP option.
+Similar to the
+.B \-n
+option.
+Don't restrict deletion to the machine
+.I rm
+was invoked from,
+delete files from all machines connected via UUCP.
+.SH FILES
+.PD 0
+.TP 25
+$HOME/resume
+for the
+.B \-m
+option.
+.TP 25
+/usr/csh/bugreports/*
+for the
+.B \-B
+option.
+.PD
+.SH BUGS
+There is no way to delete
+.I csh
+files on machines that you are
+not connected to.
+.PP
+The
+.B \-C
+option was written in
+.IR csh ,
+so of course it is ugly and non-portable.

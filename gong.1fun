@@ -1,0 +1,74 @@
+.TH GONG 1
+.\" .ad
+.SH NAME
+gong \- evaluate process performance
+.SH SYNOPSIS
+.B gong
+.RB [ \-f ]
+.RB [ \-a ]
+process-id
+.SH DESCRIPTION
+.I Gong
+is used to evaluate the performance of a process that is in execution.
+.PP
+The
+.I process-id
+is the process number of the process whose performance is to be
+evaluated.
+The evaluation is performed by a set of three ``panelist'' routines,
+each of which analyzes one aspect (time, space, and tonality)
+of the performance of the process.
+If any of these routines is not amused by the performance,
+the process being analyzed is sent the
+.IR gong (2)
+signal.
+In addition, the process-id of the evaluated process is written
+on the standard gong, for possible future corrective action.
+(It is suggested that the standard gong
+be an audible alarm for proper effect.)
+It is expected that after being
+.IR gong (2)ed,
+the process will promptly commit suicide.
+.PP
+The
+.B \-f
+keyletter argument
+indicates that
+.I gong
+is to invoke
+.IR flog (1)
+with the
+.I unmerciful
+argument if the process does not respond to
+.IR gong (2)ing.
+In the absence of this argument, the process is continuously
+.IR gong (2)ed,
+which may lead to the process becoming a
+deaf zombie.
+.PP
+The
+.B \-a
+keyletter argument indicates that if all three of the panelist
+routines
+.IR gong (2)
+a process, the process should be unmercifully
+.IR flog (1)ged
+whether or not the
+.B \-f
+keyletter is supplied.
+.SH FILES
+/dev/ding.dong is the standard gong.
+.SH "SEE ALSO"
+On the Applicability of Gonging
+to the Performance and Merit Review Process,
+.IR "Journal of Irreproducible Results" ,
+vol. 263, issue 19, pp. 253-307.
+.SH BUGS
+If the named process does not exist, it is possible that
+.I gong
+will attempt an evaluation of itself, which may lead to a condition
+known as compounded double ringing (see
+.IR echo (1)).
+Therefore, it is recommended that
+.I gong
+be used with extreme care.

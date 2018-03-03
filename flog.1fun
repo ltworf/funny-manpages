@@ -1,0 +1,84 @@
+.TH FLOG 1
+.\" .ad
+.SH NAME
+flog \(em speed up a process
+.SH SYNOPSIS
+.B flog
+.RB [ \-l " \fIn\fR]
+.RB [ \-a " \fIm\fR]
+.RB [ \-u ]
+process-id
+.SH DESCRIPTION
+.I Flog
+is used to stimulate an improvement in the performance of a process
+that is already in execution.
+The
+.I process-id
+is the process number of the process that is to be
+disciplined.
+.PP
+The value
+.I n
+of the
+.B \-l
+flag is the flagellation constant,
+i.e., the number of
+.I lashes
+to be administered per minute.
+If this argument is omitted, the default is 17,
+which is the most random random number.
+.PP
+The value
+.I m
+of the
+.B \-a
+flag is the number of times the
+inducement to speed up is to be
+.IR administered .
+If this argument is omitted, the default is one,
+which is based on the possibility that after that
+the process will rectify its behavior of its own volition.
+.PP
+The presence of the
+.B \-u
+flag indicates that
+.I flog
+is to be
+.I unmerciful
+in its actions.
+This nullifies the effects of the other keyletter arguments.
+It is recommended that
+this option be used only on extremely stubborn processes,
+as its over-use may have detrimental effects.
+.SH FILES
+.I Flog
+will read the file
+.I /have/mercy
+for any entry containing the process-id of the
+process being speeded-up.
+The file can contain whatever
+supplications are deemed necessary, but, of course, these will
+be ignored if the
+.B \-u
+flag is supplied.
+.SH "SEE ALSO"
+On Improving Process Performance
+by the Administration of Corrective Stimulation,
+.I CACM ,
+vol. 4, 1657, pp. 356-654.
+.SH DIAGNOSTICS
+If a named process does not exist,
+.I flog
+replies ``flog you'' on the standard output.
+If
+.I flog
+happens to
+.IR kill (2)
+the process, which usually happens when the
+.B \-u
+keyletter argument is supplied, it writes ``RIP,'' followed by the
+process-id of the deceased, on the standard output.
+.SH BUGS
+Spurious supplications for mercy by the process being
+flogged sometimes wind up on the standard output, rather than in
+.IR /shut/up .

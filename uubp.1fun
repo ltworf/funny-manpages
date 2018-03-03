@@ -1,0 +1,38 @@
+.\"
+.TH uubp 1C "Communication Commands"
+.SH NAME
+uubp \- Unix-to-Unix beer protocol
+.SH SYNOPSIS
+.B uubp
+.B [-acefghlqy]
+.I site
+.SH DESCRIPTION
+Uubp allows the user to transfer beer, ale, or other fermented
+grain beverages between network sites. Using TCP/IP
+(telecommunication protocol for imbibing pilsners), uubp
+encodes beer from a local file system into packets suitable for
+FTP (fermentation transfer protocol) delivery at a remote IP
+site.
+
+Example:
+
+% uubp -c"AMBER" -f0.7 -y0 -q2 198.137.240.100
+
+The preceding example sends two six-packs (-q2) of amber ale
+(-c"AMBER") with a fizziness quotient of 70%, brewed using
+yeast of type 0 (saccharomyces cerevisiae) to PI address
+198.137.240.100, which is the IP address of the White House.
+.SH RESTRICTIONS
+Both source and destination sites must be running uubp-daemon.
+In addition, local restriction exist in many areas for the
+transportation alkohol across state lines. The Electronic
+Frontier Foundation is currently involved in litigation to
+ensure the ability to distribute beer through the uubp protocol
+according to the 21st Amendment. To support the SIG of EFF
+devoted to this cause, join the Homebrewers of the Electronic
+Frontier Engaged in Winning Electronic Independence and Zeroing
+Establishment Nonsense (HEFEWEIZEN), or send mail to
+hefeweizen@eff.eff.org. Be sure to include the entire text of
+this manual page.
+.SH NOTES
+Have a homebrew!

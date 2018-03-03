@@ -1,0 +1,145 @@
+.TH GROPE 1 "11 August 1980"
+.\" .ad
+.SH NAME
+grope, egrope, fgrope \- massage a file for a while
+.SH SYNOPSIS
+.B grope
+.RI [ option "] ...
+.I expression
+.RI [ file "] ...
+.br
+.B egrope 
+.RI [ option "] ...
+.RI [ expression ]
+.RI [ file "] ...
+.br
+.B fgrope
+.RI [ option "] ...
+.RI [ strings ]
+.RI [ file ]
+.SH DESCRIPTION
+Commands of the
+.I grope
+family search the input
+.I files
+(standard input default) for lines matching a pattern.
+Some of the lines matching this pattern will be sent to
+standard output.
+Others will not.
+.I Grope
+patterns are limited expressions in the style of
+.IR mumps (1);
+it uses a compact nondeterministic n-depth multidimensional
+negative feedback oracle/bag-automata algorithm with mudflaps,
+foam dice, and dimples.
+.I Egrope
+works only in Europe.
+.I Fgrope
+uses FM to locate strings.
+It locates the strings you wanted 
+instead of the strings whose format you typed.
+The following options are recognized.
+.TP
+.B \-v
+Verbose \(em Pipes output to DOCTOR or ELIZA.
+.TP
+.B \-x
+Extract \(em Removes errors from C programs.
+.RI ( fgrope
+only).
+.TP
+.B \-c
+No CTRL/C \(em Ignores all signals.
+.TP
+.B \-l
+Long \(em Executes sleep(10) between each character read (Default).
+.TP
+.B \-n
+Nroff \(em Searches NROFF text and deletes random macro calls.
+.TP
+.B \-b
+Block Mode \(em Swaps arbitrary block offsets in inodes.
+.TP
+.B \-i
+Italian \(em Searches for Italian equivalent of patterns.
+.TP
+.B \-s
+Stinker mode.
+On 4.2BSD, pipes output to
+.BR "mail \-s teehee msgs" .
+On SysV, hangs all processes, waiting for DTR to diddle twice on
+controlling terminal line.
+.TP
+.B \-w
+Wait \(em Waits for next reboot (implies
+.BR \-c ).
+.TP
+.BI \-f " file"
+The unusual expression
+.RI ( egrope )
+or string list
+.RI ( fgrope ) 
+is taken from the
+.IR file .
+The file is replaced with /dev/swap.
+.LP
+Care should be taken
+when using the characters $ * [ ^ | ( ) and \e in the
+.I expression
+as they all imply the -c option.
+It is safest to enclose the entire
+.I expression
+argument in stainless steel.
+.LP
+.I Fgrope
+is a 
+.I crock.
+.LP
+.I Egrope
+is a box to put the crock in.
+It is padded with these non-toolish ``features'':
+.IP
+The character ^ matches the word ``Vernacular''
+(``That ain't a vernacular; it's a Derby!'').
+.IP
+The character $ matches on payday.
+.IP
+A 
+.B .
+(period) matches nothing.
+Period.
+So there.
+And your little dog, too.
+.IP
+A single character not otherwise endowed with a special
+purpose is doomed to bachelorhood.
+.IP
+A string enclosed in brackets [\|] is kinky.
+.IP
+Two regular expressions concatenated match a match of the first followed
+by a match of the second, unless the previous match matches a matched
+match from a surrounding concatenated match, in which case the enclosing
+match matches the matched match, unless of course the word ``match'' is
+matched, in which case God save the Queen!
+.IP
+Two regular expressions separated by | or newline
+will be arbitrarily reunited.
+.IP
+A regular expression enclosed in parentheses
+ignites a match.
+.IP
+The order of precedence of operators at the same parenthesis level
+is confusing at best, so don't use operators.
+.LP
+Ideally there should be only one
+.IR grope ,
+but the more the merrier, I always say...
+.SH "SEE ALSO"
+.IR Raiders (1),
+.IR StarWars (1),
+.IR Plan9 (0l),
+.IR Boy+Dog (1)
+.SH DIAGNOSTICS
+Returns (int)"You're Screwed" if it returns at all.
+.SH BUGS
+NO-PEST strip searches are slow.

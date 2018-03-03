@@ -1,0 +1,116 @@
+.\" From: Claudio@edinburgh.ac.uk (Claudio Calvelli)
+.\" Newsgroups: rec.humor.funny
+.\" Subject: Extended Kill command
+.\" Keywords: computer, unix, smirk, original
+.\" Message-ID: <S378.2262@looking.on.ca>
+.\" Date: 22 Jan 92 00:30:06 GMT
+.\" Lines: 91
+.\" Approved: funny@clarinet.com
+.TH XKILL 1
+.SH NAME
+xkill \- extended kill \- kill processes or users, including Usenet posters.
+.SH SYNOPSIS
+.B xkill
+.RB [ \-signal ]
+.I pid
+\&...
+.br
+.B "xkill \-l"
+.br
+.B xkill
+.IR username [ @host ]
+\&...
+.br
+.B xkill
+.B \-u
+.RB [ \-qs ]
+.RB [ \-p ]
+.RI [ newsgroup ]
+.SH DESCRIPTION
+.I xkill
+sends a signal to a process or a terminal.
+The first two forms send a signal to a process.
+The functionality in this case is the same as
+.IR kill (1).
+.PP
+When the command
+.I xkill
+is invoked with an username as argument,
+it attempts to locate the specified user on the local host.
+If the user is logged on,
+the signal ECUTE (electrocute, 666) is sent to the user's terminal.
+This will cause the keyboard to electrocute the user.
+If the user is not logged on,
+the appropriate line of the file
+.I /etc/passwd
+is marked.
+The first time the user logs on the ECUTE signal is
+sent to the terminal he is using.
+.PP
+When the command
+.I xkill
+is invoked with a remote username,
+in the form
+.IR user@host ,
+a connection with the remote host is attempted (see
+.IR xkilld (8)),
+to send the ECUTE signal to the user's terminal.
+.SH "USENET KILL"
+The
+.B \-u
+(Usenet) option is an extension of the concept of KILL file.
+.PP
+The program will attempt to locate a remote user by scanning
+the news spool area.
+When the user is located,
+a connection is attempted with the appropriate host,
+and the ECUTE (electrocute, 666) signal is sent to the appropriate user.
+The search only considers one newsgroup.
+If none is specified,
+.I rec.humor
+is assumed by default.
+The program attempts to locate people whose signature is too long,
+and who quote a whole article in order to comment on a single line.
+The option
+.B \-s
+can be used to consider only the size of signatures,
+while the option
+.B \-q
+can be used to consider only the size of the quotations.
+The option
+.B \-qs
+corresponds to the default.
+.PP
+When the
+.B \-p
+(post) switch is used,
+the user is electrocuted next time he post news.
+.SH FILES
+.IP /etc/passwd 20
+to keep track of users marked for electrocution
+.IP /etc/hosts 20
+list of remote hosts
+.IP /usr/spool/news 20
+news spool directory;
+the news articles are stored here
+.SH "SEE ALSO"
+.IR kill (1),
+.IR telnet (1c),
+.IR xkilld (8)
+.SH BUGS
+To kill a remote user,
+it is sometimes better to use the command
+.IR telnet (1c)
+using the standard
+.I xkilld
+port (number 666).
+When the connection is attempted by
+.IR xkill (1)
+some gateways will explode after the user is electrocuted.
+.PP
+To decide what is a quotation,
+and what is a signature,
+a very complicated pattern matching is used.
+This does not always work,
+even if the program hasn't yet electrocuted
+somebody who is not guilty of bandwidth waste.

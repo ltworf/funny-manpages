@@ -1,0 +1,54 @@
+.TH RESCROG 1
+.SH NAME
+rescrog \(em change something, make it different
+.SH SYNOPSIS
+.B /etc/rescrog
+.RI [ system | service ]
+.RI [ direction ]
+.SH DESCRIPTION
+.I rescrog
+assumes the future basis of a
+.I system
+or
+.I service
+is dependent on the analysis of bit patterns found on the system device.
+It determines the logical next-best bit pattern
+to yield the new system or service.
+This avoids the necessity of distribution tapes.
+.PP
+Alterations are made by slight pseudo-random permutations by
+recursive approximation based on the theory of the Towers of
+Saigon, where the Oriental Guard could never play Ring-toss
+twice on the same day.
+.PP
+.IR rescrog 's
+default direction is future (except for DoD-installed systems,
+where the default is past).
+The first argument tells
+.I rescrog
+whether to perform its actions on the specified
+.I system
+or
+.I network
+service.
+It is best to
+.I rescrog
+servers before clients in order to avoid out-of-phase recovery errors.
+.SH FILES
+/eunuchs
+.br
+/dev/javu
+.br
+/etc/etc
+.SH "SEE ALSO
+.IR punt (1),
+.IR spewtab (5),
+.IR rescrogd (8)
+.SH BUGS
+.I rescrog
+cannot distinguish between bugs and features.
+.PP
+Interruption while rescrogging can cause diddle-damage.
+.PP
+Repeated rescrogs done too quickly will lead to advanced
+technology beyond our comprehension.

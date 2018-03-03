@@ -1,0 +1,308 @@
+.\" -------
+.\" Message-ID: <S48e.386a@looking.on.ca>
+.\" Date: Mon, 26 Oct 92 4:30:03 EST
+.\" Newsgroups: rec.humor.funny
+.\" Subject: condom(1) man page (original)...
+.\" From: maupin@cs.washington.edu (Ken Maupin)
+.\" Keywords: chuckle, original, computers, sexual
+.\" Approved: funny@clarinet.com
+.\"
+.\" The following was inspired by the sex.1 and celibacy.6 EUNUCH
+.\" man pages I found hiding in, of all places, the GNU Emacs
+.\" distribution on my machine (I guess we know what Richard Stallman
+.\" thinks about when he isn't writing GNU software, eh?).
+.\" -------
+.\" Reverse-engineered to [nt]roff -man source by DaviD W. Sanderson
+.\" -------
+.TH CONDOM 1 "" "EUNUCH Programmer's Manual"
+.SH NAME
+condom \- protection against viruses and prevention of child processes
+.SH SYNOPSIS
+.B condom
+.RI [ options ]
+.RI [ processid ]
+.SH DESCRIPTION
+.I condom
+provides protection against System Transmitted
+Viruses (STVs) that may invade your system.
+Although the spread of such viruses across a network
+can only be abated by aware and cautious users,
+.I condom
+is the only highly effective means of preventing
+viruses from entering your system (see
+.IR celibacy (1)).
+Any data passed to
+.I condom
+by the protected process will be blocked, as specified by
+the value of the
+.B \-s
+option (see
+.B OPTIONS
+below).
+.I condom
+is known to
+defend against the following viruses and other malicious
+afflictions:
+.RS
+.IP \(bu
+AIDS
+.PD 0
+.IP \(bu
+Herpes Simplex (genital varieties)
+.IP \(bu
+Syphilis
+.IP \(bu
+Crabs
+.IP \(bu
+Genital warts
+.IP \(bu
+Gonhorrea
+.IP \(bu
+Chlamydia
+.IP \(bu
+Michelangelo
+.IP \(bu
+Jerusalem
+.PD
+.RE
+.PP
+When used alone or in conjunction with
+.IR pill (1),
+.IR sponge (1),
+.IR foam (1),
+and/or
+.IR setiud (3),
+.I condom
+also prevents the conception of a child process.
+If invoked from within a synchronous process,
+.I condom
+has, by default, an 80% chance of preventing the external processes
+from becoming parent processes (see the
+.B \-s
+option below).
+When other process contraceptives are used,
+the chance of preventing a child process from being forked
+becomes much greater.
+See
+.IR pill (1),
+.IR sponge (1),
+.IR foam (1),
+and
+.IR setiud (3)
+for more information.
+.PP
+If no options are given, the current user's login process (as
+determined by the environment variable USER) is protected with a
+Trojan rough-cut latex condom without a reservoir tip.
+The optional
+.RI `` processid ''
+argument is an integer specifying the process to protect.
+.PP
+NOTE:
+.I condom
+may only be used with a hard disk.
+.I condom
+will terminate abnormally with exit code \-1 if used with a floppy
+disk (see
+.B DIAGNOSTICS
+below).
+.ne 5
+.SH OPTIONS
+The following options may be given to
+.IR condom :
+.TP
+.BI \-b " brand"
+.IR brand s
+are as follows:
+.RS 1i
+.TP
+trojan (default)
+.PD 0
+.TP
+ramses
+.TP
+sheik
+.TP
+goldcoin
+.TP
+fourex
+.PD
+.RE
+.TP
+.BI \-m " material"
+The valid
+.IR material s
+are:
+.RS 1i
+.TP
+.PD 0
+latex (default)
+.TP
+saranwrap
+.TP
+membrane
+.B WARNING!
+The membrane option is
+.I not
+endorsed by the System Administrator General as an
+effective barrier against certain viruses.
+It is supported only for the sake of tradition.
+.PD
+.RE
+.TP
+.BI \-f " flavor"
+The following
+.IR flavor s
+are currently supported:
+.RS 1i
+.TP
+.PD 0
+plain (default)
+.TP
+apple
+.TP
+banana
+.TP
+cherry
+.TP
+cinnamon
+.TP
+licorice
+.TP
+orange
+.TP
+peppermint
+.TP
+raspberry
+.TP
+spearmint
+.TP
+strawberry
+.PD
+.RE
+.TP
+.B \-r
+Toggle reservoir tip (default is no reservoir tip)
+.TP
+.BI \-s " strength"
+.I strength
+is an integer between 20 and 100 specifying the resilience of
+.I condom
+against data passed to
+.I condom
+by the protected process.
+Using a larger
+value of
+.I strength
+increases
+.IR condom 's
+protective abilities,
+but also reduces interprocess communication.
+A smaller value of
+.I strength
+increases interprocess communication,
+but also increases the likelihood of a security breach.
+An extremely vigorous process or
+one passing an enormous amount of data to
+.I condom
+will increase the chance of
+.IR condom 's
+failure.
+The default
+.I strength
+is 80%.
+.ne 8
+.TP
+.BI \-t " texture"
+Valid
+.IR texture s
+are:
+.RS 1i
+.TP
+.PD 0
+rough (default)
+.TP
+ribbed
+.TP
+bumps
+.TP
+lubricated
+(provides smoother interaction between processes)
+.PD
+.RE
+.PP
+WARNING: The use of an external application to
+.I condom
+in order to reduce friction between processes has been proven in
+benchmark tests to decrease
+.IR condom 's
+strength factor!
+If execution speed is important to your process, use the
+.RB `` \-t
+.BR lubricated ''
+option.
+.SH DIAGNOSTICS
+.I condom
+terminates with one of the following exit codes:
+.TP
+\-1
+An attempt was made to use
+.I condom
+on a floppy disk.
+.TP
+0
+.I condom
+exited successfully (no data was passed to the synchronous process).
+.TP
+1
+.I condom
+failed and data was allowed through.
+The danger of transmission of an STV or the forking of a child process
+is inversely proportional to the number of other protections employed
+and is directly proportional to the ages of the processes involved.
+.SH BUGS
+.I condom
+is
+.B NOT
+100% effective at preventing a child process
+from being forked or at deterring the invasion of a virus (although
+the System Administrator General has deemed that
+.I condom
+is the most
+effective means of preventing the spread of system transmitted
+viruses).
+See
+.IR celibacy (1)
+for information on a 100% effective program
+for preventing these problems.
+.PP
+Remember, the use of
+.IR sex (1)
+and other related routines
+should only occur between mature, consenting processes.
+If you must use
+.IR sex (1),
+please employ
+.I condom
+to protect your process and your synchronous process.
+If we are all responsible, we can stop the spread of STVs.
+.SH "AUTHORS and HISTORY"
+The original version of
+.I condom
+was released in Roman times and was only marginally effective.
+With the advent of modern technology,
+.I condom
+now supports many more options and is much more effective.
+.PP
+The current release of
+.I condom
+was written by Ken Maupin at the University of Washington
+(maupin@cs.washington.edu) and was last updated on 10/7/92.
+.SH "SEE ALSO"
+.IR celibacy (1),
+.IR sex (1),
+.IR pill (1),
+.IR sponge (1),
+.IR foam (1),
+and
+.IR setiud (3)

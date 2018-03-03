@@ -1,0 +1,146 @@
+.\"
+.TH PARTY 1 "Aug 18, 1997" ""
+.SH NAME
+party \- set OS responses mode
+.SH SYNOPSIS
+.B party ON|OFF|WHEREIS [ - ] dnv
+.SH DESCRIPTION
+Operating  systems  being  what they are,  the admin people can
+easily  grow tired of  command responses that resemble dyslexic
+eugene-speak   filtered   through   Kernighan   and   Ritchie's
+collective  back-brains.  To alleviate this, we have included a
+slightly  more  `casual'  mode,  in  which the responses to all
+commands  are  first filtered  through  a  customising  routine
+.B (DUDE)
+, which  makes them  sound a little more  friendly while retaining
+their  full  information   content  (usually).   The rooted(c)
+system prompt is  changed to  `What now,  dude?' and output from
+each command is terminated by `No problem, dude.'
+.SH OPTIONS
+.TP
+.B \-v
+Verbose mode  (ALL commands  have  a `verbose' mode). When  this  option
+is  present,  all filtered responses are  preceeded  by a message:
+`This response has been parsed by the
+.B DUDE
+filter and is not intended to be some sort of sleazy come-on.'
+.TP
+.B \-d
+Don't  restart  all  processes  after  recompiling the
+.B /uselss/libs/eugene
+file (see below).   This alows any important tasks to complete beforehand.
+.TP
+.B \-n
+Notify  all  users  that  they  are about to be force-logged out and
+force-logged in again.
+.TP
+.B ON
+Activates the
+.B DUDE
+filter.
+.TP
+.B OFF
+De-activates the
+.B DUDE
+filter.
+.TP
+.B WHEREIS
+Doesn't do anything, but we couldn't resist it.
+.SH EXAMPLES
+.ft C
+%-)  party on
+
+What now, dude?
+
+.ft TR
+To compare  the differing responses, here is output provided by the
+ispi -s command, with party OFF and party ON:
+
+party OFF
+
+.ft C
+line     who       why                         how long
+.br
+\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+.br
+000      rooted    that's you, dweeb!          epoch
+.br
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+.br
+00F      wp        she's supposed to be        0:44:12
+                   typing up the end of
+                   financial year report,
+                   but she's been doing her
+                   resume when she thinks
+                   no-one is watching
+.br
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+.br
+014      maint     playing games, as usual     0:51:16
+.ft TR
+
+
+party ON
+
+.ft C
+Well,  let's see who's on, eh?  There's you, of course, on line 000
+(Imagine that!  Hahaha!)  Oh look,  on serIOus line 00F,  it's that
+cute little secretary - looks like she's lost her keyboard template
+again, she's been hitting the escape key for the past five minutes!
+AND  OF  COURSE, the  guys  down in maintenance are playing `cosmic
+ballcrushers'.   As  usual.   Well,  who  else,  um,  no-one really
+interesting like,  ya know, oh hang on,  DTR is toggling on serIOus
+line 03D.. oh, no problem, it's that stuffed modem again.  You want
+maybe I should send  some AMail to maintenance  and get 'em to look
+at it?   No problem, dude.
+
+What now, dude?
+.ft TR
+.SH FILES
+.TP
+.B /uselss/libs/bill&ted/DUDE
+.nf
+This  is  the pipe process,  usually
+started  at system shoe,  which lies
+idle until party ON is issued.
+.fi
+.TP
+.B /uselss/libs/eugene
+.nf
+Contains all of the ordinary, ho-hum
+confusing   computer   -   jargonese
+responses  which commands ordinarily
+issue.  Text file.
+.fi
+.TP
+.B /uselss/libs/eugene.spoo
+.nf
+compiled version of the eugene file.
+.fi
+.TP
+.B /ephemeral/eugene.chex
+.nf
+Checksum  for  the  compiled  eugene file.
+.fi
+.SH SEE ALSO
+.IR crp (1),
+.IR stuffio (2),
+.IR doobrie (9),
+.IR gouge (3),
+.IR ftang (65534),
+.IR wi (-1),
+.IR edmond (29),
+.IR jumpstart (2),
+.IR vo_mit (992)
+.SH BUGS
+The
+.B \-n
+option can be slow.
+
+If  the n option is issued,  some users in a wi editing session
+may not  receive the  `warning, restart imminent' message until
+after the restart.
+
+There is no way selectively to follow symbolic links.
+
+Sunburne Computer, Inc. 9 October 1991

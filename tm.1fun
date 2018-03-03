@@ -1,0 +1,74 @@
+.TH TM 1
+.\" .ad
+.SH NAME
+tm \- meditate
+.SH SYNOPSIS
+.B tm
+.RB [ \-\fInumber ]
+.RI [ time ]
+.SH DESCRIPTION
+.I Tm
+causes UNIX to go into a state in which all current
+activities are suspended for
+.I time
+minutes
+(default is 20).
+At the beginning of this period,
+.I tm
+generates a set of
+.I number
+(default 3)
+transcendental numbers.
+Then it prints a two- to six-character
+nonsense syllable
+.RI ( mantra )
+on every logged-in terminal
+(a
+.I different
+syllable on each terminal).
+For the remainder of the time interval, it repeats these
+numbers to itself, in random order, binary
+digit by binary digit (memory permitting),
+while simultaneously contemplating its kernel.
+.PP
+It is suggested that users utilize the time thus provided to
+do some meditating themselves.
+One possibility is to close one's eyes, attempt to shut out one's
+surroundings, and concentrate on the
+.I mantra
+supplied by
+.IR tm .
+.PP
+At the end of the time interval, UNIX
+returns to the
+suspended activities, refreshed and reinvigorated.
+Hopefully, so do the users.
+.SH FILES
+.I Tm
+does not use any files,
+in an attempt to isolate itself
+from external influences and distractions.
+.SH DIAGNOSTICS
+If disturbed for any reason during the interval of meditation,
+.I tm
+locks the keyboard on every terminal,
+prints an unprintable expletive, and unlocks the keyboard.
+Subsequent UNIX operation may be marked by an unusual number
+of lost or scrambled files and dropped lines.
+.SH BUGS
+If
+.I number
+is greater than 32,767 (decimal),
+.I tm
+appears to generate
+.I rational
+numbers for the entire time interval,
+after which the behavior of the system may be completely
+.I irrational
+(i.e., transcendental).
+.SH WARNING
+Attempts to use
+.IR flog (1)
+on
+.I tm
+are invariably counterproductive.

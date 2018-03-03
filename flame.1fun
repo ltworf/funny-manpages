@@ -1,0 +1,184 @@
+.\"-------
+.\" f l a m e . 1
+.\"
+.\" Created from a post-nroff version posted in rec.humor:
+.\"
+.\" >From: felton@eng3.UUCP (Ed Felton)
+.\" Subject: New Unix Utility
+.\" Message-ID: <571@eng3.UUCP>
+.\" Date: 17 Oct 90 15:43:53 GMT
+.\" Reply-To: felton@sci34hub.sci.com (Ed Felton)
+.\"
+.\" We found the following man page on our system...
+.\" What do you folks think??
+.\" --
+.\" Ed Felton uunet!sci34hub!eng3!felton
+.\"
+.\" DaviD W. Sanderson
+.\"-------
+.TH FLAME 1
+.SH NAME
+flame \(em reply to Usenet News posting automatically
+.SH SYNOPSIS
+.B flame
+.RI [ options ]
+.RI [ filename ]
+.SH DESCRIPTION
+Flame is a AI tool providing an automated method
+for replying to articles posted to Usenet News.
+Special care is paid to allow the user to specify
+the type of reply he desires.
+The following options are supported by flame:
+.TP
+.B \-\-
+Take input from stdin.
+.TP
+.BI \-x " regexp
+Crosspost to all newsgroups matching
+.IR regexp .
+.TP
+.BI \-n " number
+Post this reply
+.I number
+times.
+.TP
+.B \-b
+Reply in BIFF MODE.
+.TP
+.B \-d
+Delay response until original posting expires.
+.TP
+.B \-m
+Misdirect to a random Author.
+.TP
+.B \-r
+ROT13 quotes from original posting.
+.TP
+.BI \-g " regexp
+Reply to all messages in newsgroups matching
+.IR regexp .
+.TP
+.B \-A
+Call the Author Assh*le in 12 languages.
+.TP
+.B \-B
+Bait the Author.
+.TP
+.B \-C
+Accuse the Author of communist leanings.
+.TP
+.B \-D
+Denigrate the Author.
+.TP
+.B \-E
+Picks apart the Author's educational background.
+.TP
+.B \-F
+Accuse the Author of fascist leanings.
+.TP
+.B \-G
+Post using Greek insult module.
+.TP
+.B \-H
+Accuse the Author of homophobic leanings.
+.TP
+.B \-I
+Question the Author's intelligence.
+.TP
+.B \-J
+Accuse the Author of purchasing Japanese imports.
+.TP
+.B \-K
+Accuse the Author of working
+for the KGB, MOSSAD, CIA, or MI5 as appropriate.
+.TP
+.B \-L
+Post using Latin insult module.
+.TP
+.B \-M
+Insult the Author's mother.
+.TP
+.B \-N
+Accuse the Author of Neo-Nazi leanings.
+.TP
+.B \-O
+Quote obscure references proving falsehood of the posting.
+.TP
+.B \-P
+Question the Author's parentage.
+.TP
+.B \-Q
+Accuse the Author of deviant sexual practices.
+.TP
+.B \-R
+Accuse the Author of racist leaning.
+.TP
+.B \-S
+Accuse the Author of sexist leanings.
+.TP
+.B \-T
+Accuse the Author of cross dressing.
+.TP
+.B \-U
+State that the Author just doesn't understand anything.
+.TP
+.B \-V
+Pretend sympathy for Author's virgin sensibilities.
+.TP
+.B \-W
+Accuse the Author of voting for George Bush.
+.TP
+.B \-X
+Prepend obscene adjectives wherever syntactically correct.
+.TP
+.B \-Y
+Accuse the Author of PLO membership.
+.TP
+.B \-Z
+Accuse the Author of Zionist leanings.
+.SH ENVIRONMENT
+The environment variable FLAME_TYPE can be set
+to any combination of the above parameters,
+and will be used as the default flame type to generate.
+.PP
+The environment variable OBSCENE points to a file containing
+miscellaneous obscene adjectives for the
+.B \-X
+option above.
+.SH MACROS
+Macro Support will be added to the next release of
+.IR flame .
+.SH AUTHOR
+Unknown
+.SH FILES
+.TP
+\&.lastflame
+This file contains the number of the last article flamed.
+Used when
+.IR flame ing
+an entire newsgroup.
+.TP
+\&.prefflame
+This file contains the user's preferred flames.
+.TP
+\&.altflame
+This file contains alternate phrasing
+of some of the more standard flames.
+Used to keep the program from flaming itself.
+.SH "SEE ALSO
+.IR rn (1),
+.IR more (1),
+.IR newsrc (5),
+.IR readnews (1),
+.IR Pnews (1),
+.IR Rnmail (1)
+.SH DIAGNOSTICS
+Self Documenting.
+.SH BUGS
+Occasionally,
+.I flame
+will turn on the user,
+and flame all outgoing postings.
+When this happens, the best thing to do reinstall your
+news software and
+.IR flame .

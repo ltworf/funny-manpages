@@ -1,0 +1,90 @@
+.\"
+.TH xLart 1 "Aug 17, 1997" "GNU Utilities"
+.SH NAME
+xLart \- interactive X interface to
+.IR rlart (1)
+.SH SYNOPSIS
+.B xLart
+.SH DESCRIPTION
+.B xLart 
+is an interactive X11-based interface to the 
+.IR rlart (1) 
+off-line lart spooler. 
+.B xLart 
+uses the lartd - if lartd is not running when 
+.B xLart 
+is started, 
+.B xLart 
+will start it and send an autolart to the members of wheel (not including
+root). 
+.B xLart 
+utilises xfaces and Drag-and-Drop to allow playing admins to either 
+drag lusers onto larts or vice versa. Points are accrued for each 
+successful lart deployment, and scores written to 
+.B /var/account/lart/interactive.
+
+.B xLart 
+makes use of several basic larts, and as more points are
+accrued (or as the lusers become harder to lart) other, more
+capable larts are made available. The basic larts are:
+
+.nf
+			Filleting knife
+			10lb Sledgehammer
+			Garrotte
+			Beretta 9mm
+			un-set concrete
+			tommy gun
+.fi
+
+Of course, since 
+.B xlart 
+is only distributed in source form, site-dependent larts may be designed, 
+implemented and used by the relevant BOFH or sysmangler.
+
+The highest level of play also allows for the use of the atomic
+lart (lat and long must be specified, but some help is given by
+the program) and the psychological lart (old-style lobotomy,
+Electro-convulsive shock therapy, extreme aversion therapy and
+drug cocktails). The psychological lart needs to be used over
+several rounds, due to its non-instantaneous nature.
+
+The vanilla installation of 
+.B xLart 
+requires a configuration file list of larts to be added at certain 
+point intervals. A slightly more interesting installation makes 
+use of the xface library to provide that personal touch when larting 
+lusers. The most interesting variant of 
+.B xLart 
+is to not only use xfaces but also to describe a building layout 
+(similar to loderunner) with levels and interior descriptions. 
+This variant allows several admins/BOFHen to play simultaneously, 
+competing against each other to see how many lusers they can lart 
+in a given time period (say until local police units arrive) or before
+ammunition runs out.
+.SH FILES
+
+.B /etc/lartcap 
+.nf
+					- lart capability database 
+.fi
+.B /var/lib/lart/lusers/xface.<lusername>
+.nf
+					- xface for lusername 
+.fi
+.B /var/lib/lart/larts/<lartname>.ppm
+.nf
+					- small iconic image of lartname
+.fi
+
+.SH SEE ALSO
+.IR lartcap (5),
+.IR lac (8),
+.IR lartd (8) 
+and 
+.IR rlart (1)
+
+.SH BUGS
+None found yet, but who really cares?
+.SH AUTHORS
+James McPherson
