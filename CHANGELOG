@@ -1,0 +1,3 @@
+2.0
+   * Import existing manpages from the original package
+   * Write Makefile to make install possible
