@@ -1,5 +1,5 @@
 .\"
-.TH uubp 1C "Communication Commands"
+.TH uubp 1fun "Communication Commands"
 .SH NAME
 uubp \- Unix-to-Unix beer protocol
 .SH SYNOPSIS

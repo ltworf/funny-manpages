@@ -17,7 +17,7 @@
 .\"
 .\" DaviD W. Sanderson
 .\"-------
-.TH BABY 1
+.TH BABY 1fun
 .SH NAME
 baby \(em create new process from two parents
 .SH SYNOPSIS

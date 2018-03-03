@@ -14,7 +14,7 @@
 .\" -------
 .\" Reverse-engineered to [nt]roff -man source by DaviD W. Sanderson
 .\" -------
-.TH CONDOM 1 "" "EUNUCH Programmer's Manual"
+.TH CONDOM 1fun "" "EUNUCH Programmer's Manual"
 .SH NAME
 condom \- protection against viruses and prevention of child processes
 .SH SYNOPSIS

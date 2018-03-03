@@ -46,7 +46,7 @@
 .\" Ron stole meggies heart away, and I got sidneys leg.
 .\" 
 .\" (From the Ada rm(1) manual page...)
-.TH RM 1
+.TH RM 1fun
 .SH NAME
 rm \- remove files
 .SH SYNOPSIS

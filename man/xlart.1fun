@@ -1,5 +1,5 @@
 .\"
-.TH xLart 1 "Aug 17, 1997" "GNU Utilities"
+.TH xLart 1fun "Aug 17, 1997" "GNU Utilities"
 .SH NAME
 xLart \- interactive X interface to
 .IR rlart (1)

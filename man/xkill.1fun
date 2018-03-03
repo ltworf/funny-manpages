@@ -6,7 +6,7 @@
 .\" Date: 22 Jan 92 00:30:06 GMT
 .\" Lines: 91
 .\" Approved: funny@clarinet.com
-.TH XKILL 1
+.TH XKILL 1fun
 .SH NAME
 xkill \- extended kill \- kill processes or users, including Usenet posters.
 .SH SYNOPSIS

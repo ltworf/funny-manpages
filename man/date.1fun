@@ -11,8 +11,8 @@
 .\" Approved: funny@clarinet.com
 .\" 
 .\" (I wrote this, but the idea came from a friend)
-.\" 
-.TH DATE 6 "January 1, 1992"
+.\"
+.TH DATE 1fun "January 1, 1992"
 .UC 4
 .SH NAME
 date \- get and print a date

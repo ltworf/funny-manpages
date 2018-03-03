@@ -1,7 +1,7 @@
 .\" -------
 .\" Reverse-engineered to [nt]roff source by DaviD W. Sanderson
 .\" -------
-.TH GNUecho 1
+.TH GNUecho 1fun
 .SH NAME
 echo \- echo arguments
 .SH SYNOPSIS
