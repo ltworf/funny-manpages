@@ -1,0 +1,131 @@
+.TH SEX 6 \& \& "EUNUCH Programmer's Manual"
+.SH NAME
+sex \(em have sex
+.SH SYNOPSIS
+.B sex
+.RI [ options "] ...
+.RI [ username "] ...
+.SH DESCRIPTION
+.I sex
+allows the invoker to have sex with the user(s)
+specified in the command line.
+If no users are specified,
+they are taken from the LOVERS environment variable.
+Options to make things more interesting are as follows:
+.TP
+.B \-1
+masturbate
+.TP
+.B \-a
+external stimulus (aphrodisiac) option
+.TP
+.B \-b
+buggery
+.TP
+.BI \-B " animal
+bestiality with
+.I animal
+.TP
+.B \-c
+chocolate sauce option
+.TP
+.B \-C
+chaining option (cuffs included) (see also
+.B \-m
+.B \-s
+.BR \-W )
+.TP
+.BI \-d " file
+get a date with the features described in
+.I file
+.TP
+.B \-e
+exhibitionism (image sent to all machines on the net)
+.TP
+.B \-f
+foreplay option
+.TP
+.B \-F
+nasal sex with plants
+.TP
+.B \-i
+coitus interruptus (messy!)
+.TP
+.B \-j
+jacuzzi option (California sites only)
+.TP
+.B \-l
+leather option
+.TP
+.B \-m
+masochism (see
+.BR \-s )
+.TP
+.B \-M
+triple parallel (Menage a Trois) option
+.TP
+.B \-n
+necrophilia (if target process is not dead, program kills it)
+.TP
+.B \-o
+oral option
+.TP
+.B \-O
+parallel access (orgy)
+.TP
+.B \-p
+debug option (proposition only)
+.TP
+.B \-P
+pedophilia (must specify a child process)
+.TP
+.B \-q
+quickie (wham, bam, thank you, ma'am)
+.TP
+.B \-s
+sadism (target must set
+.BR \-m )
+.TP
+.B \-S
+sundae option
+.TP
+.B \-v
+voyeurism (surveys the entire net)
+.TP
+.B \-w
+whipped cream option
+.TP
+.B \-W
+whips (see also
+.BR \-s ,
+.BR \-C ,
+and
+.BR \-m )
+.SH ENVIRONMENT
+.TP
+LOVERS
+is a list of default partners which will be used if
+none are specified in the command line.
+If any are specified, the values in LOVERS is ignored.
+.SH FILES
+.TP
+.I /usr/share/sex/animals
+animals for bestiality
+.TP
+.I /usr/share/sex/blackbook
+possible dates
+.TP
+.I /usr/share/sex/sundaes
+sundae recipes
+.TP
+.I /usr/share/sex/s&m
+sado-masochistic equipment
+.SH BUGS
+.TP
+^C
+(quit process) may leave the user very unsatisfied.
+.TP
+^Z
+(stop process) is usually quite messy.
+.SH HISTORY
+Oldest program ever.

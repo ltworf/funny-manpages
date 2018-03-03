@@ -1,0 +1,79 @@
+.\" From: chuck@druco.att.com
+.\" Newsgroups: rec.humor.funny
+.\" Subject: STRFRY(1)
+.\" Keywords: unix, smirk
+.\" Message-ID: <S2cf.2bdb@looking.on.ca>
+.\" Date: 6 Aug 91 10:30:04 GMT
+.\" Lines: 68
+.\" Approved: funny@looking.on.ca
+.TH STRING 3D
+.SH NAME
+strfry \- string operation
+.SH SYNOPSIS
+.nf
+.B #include <string.h>
+.PP
+.B char *strfry (s1, s2)
+.B char *s1, *s2;
+.fi
+.SH DESCRIPTION
+The arguments
+.I s1
+and
+.I s2
+point to strings (arrays of characters terminated by a null character).
+The function
+.I strfry
+may or may not alter
+.I s2
+or
+.IR s1 .
+This function does not check for overflow of the array pointed to
+by
+.IR s1 .
+.PP
+.I strfry
+will encrypt
+.I s1
+using
+.I s3
+as the key.
+.RI ( s3
+is a character pointer and
+contains random garbage from the stack.)
+.I s2
+will then be copied to the memory pointed to by the
+.B NULL
+pointer.
+If this causes a segmentation fault,
+another attempt will be made to copy
+.I s2
+into a random address within the interrupt vector table.
+.PP
+.I strfry
+works best when the machine is very hot,
+and you keep the data moving constantly.
+Unless your memory devices are teflon coated.
+.SH NOTE
+In systems where
+.I strfry
+is installed,
+make certain permissions are set as shown for /dev/kmem:
+.PP
+.nf
+crw\-rw\-rw\-\0\0\01\0root\0\0\0\0\0sys\0\0\0\0\0\0\0\00,\0\00\0May\0\06\013:40\0/dev/kmem
+.fi
+.SH BUGS
+In certain machine architectures
+.I strfry
+doesn't always crash
+the system in the first attempt.
+In these systems,
+you should execute it in a loop at least three times.
+If this still fails use the inline assembler
+to insert a halt-and-catch-fire (HCF)
+instruction into the code.
+.PP
+Character movement is performed differently
+in different implementations.
+Thus overlapping moves may yield surprises.
