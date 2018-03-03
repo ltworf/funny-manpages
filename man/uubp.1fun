@@ -20,7 +20,7 @@ Example:
 
 The preceding example sends two six-packs (-q2) of amber ale
 (-c"AMBER") with a fizziness quotient of 70%, brewed using
-yeast of type 0 (saccharomyces cerevisiae) to PI address
+yeast of type 0 (saccharomyces cerevisiae) to IP address
 198.137.240.100, which is the IP address of the White House.
 .SH RESTRICTIONS
 Both source and destination sites must be running uubp-daemon.
