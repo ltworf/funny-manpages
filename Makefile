@@ -23,3 +23,11 @@ install:
 	install -m644 -D man/grope.1fun ${DESTDIR}/usr/share/man/man1/grope.1fun
 	ln -s grope.1fun ${DESTDIR}/usr/share/man/man1/egrope.1fun
 	ln -s grope.1fun ${DESTDIR}/usr/share/man/man1/fgrope.1fun
+
+dist:
+	cd ..; tar -czf funny-manpages_`head -1 funny-manpages/CHANGELOG`.orig.tar.gz \
+		funny-manpages/Makefile \
+		funny-manpages/CHANGELOG \
+		funny-manpages/README.md \
+		funny-manpages/man
+	mv ../funny-manpages_`head -1 CHANGELOG`.orig.tar.gz .
