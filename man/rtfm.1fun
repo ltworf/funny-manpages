@@ -93,7 +93,7 @@ Kill all the lusers processes.
 
 .I FILE=file.name
 Use a file to define a course of
-actions. This can be any executeable file except those
+actions. This can be any executable file except those
 using ksh, which no god-fearing right-thinking sysadmin
 would be caught using lest he be struck down by the
 wrath of God.
