@@ -1,4 +1,4 @@
-.\" From: dylan@ibmpcug.co.uk (Matthew Farwell)
+..\" From: dylan@ibmpcug.co.uk (Matthew Farwell)
 .\" Newsgroups: comp.unix.shell
 .\" Subject: Re: zsh (was: C shell brain damage)
 .\" Message-ID: <1991Nov24.165913.23349@ibmpcug.co.uk>
@@ -7,7 +7,7 @@
 .\" Reply-To: dylan@ibmpcug.co.uk (Matthew Farwell)
 .\" Organization: The IBM PC User Group, UK.
 .\" Lines: 152
-.\" 
+.\"
 .\" In article <peter.690989546@auad> peter@auad.acadiau.ca (Peter Steele) writes:
 .\" >>>>Hmm. Do you mean to say you are supporting csh programmers on your system?
 .\" >>>>If so, I suggest you get 'em to "unlearn" csh and move to something more
@@ -15,36 +15,36 @@
 .\" >>>>so prevent many future disasters ... (you wanna do it Tom?).
 .\" >We have dozens of csh programmers here and not one have come to me with
 .\" >some weird unexplainable problem.
-.\" 
+.\"
 .\" I notice you use the words 'weird' and 'unexplainable' in the same
 .\" sentence. Everything to do with csh is very explainable. 'Its csh'
 .\" usually does the trick. As for being weird, explaining that is easy
 .\" too. 'Its csh' usually does the trick :-)
-.\" 
+.\"
 .\" >                                  One thing to note is that most perceive
 .\" >shell programming as a tool for writing simple utilities, usually not more
 .\" >than a page or two long. If the job requires something more than that,
 .\" >they'll use something better suited to the task like C.
-.\" 
+.\"
 .\" I disagree. There are lots of features in say awk and perl which makes
 .\" them better suited to certain things than C. String manipulation for
 .\" instance. Anything which uses associative arrays. Perl often turns out
 .\" faster than C in some areas because of the high degree of optimisation.
 .\" Most people haven't got the time to spend optimising stuff to the degree
 .\" that perl is optimised.
-.\" 
+.\"
 .\" >I use C-shell, Boune shell, Perl, and C, although after reading Tom C.'s
 .\" >"reasons not to program in C-shell", I'll probably refrain from writing
 .\" >any more C-shell scripts....
-.\" 
+.\"
 .\" Good idea.
-.\" 
+.\"
 .\" Dylan.
-.\" -- 
+.\" --
 .\" dylan@ibmpcug.co.uk || ...!uunet!uknet!ibmpcug!dylan
 .\" I teleported home one day, with ron and sid and meg
 .\" Ron stole meggies heart away, and I got sidneys leg.
-.\" 
+.\"
 .\" (From the Ada rm(1) manual page...)
 .TH RM 1fun
 .SH NAME

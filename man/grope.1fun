@@ -8,7 +8,7 @@ grope, egrope, fgrope \- massage a file for a while
 .I expression
 .RI [ file "] ...
 .br
-.B egrope 
+.B egrope
 .RI [ option "] ...
 .RI [ expression ]
 .RI [ file "] ...
@@ -36,7 +36,7 @@ foam dice, and dimples.
 works only in Europe.
 .I Fgrope
 uses FM to locate strings.
-It locates the strings you wanted 
+It locates the strings you wanted
 instead of the strings whose format you typed.
 The following options are recognized.
 .TP
@@ -78,7 +78,7 @@ Wait \(em Waits for next reboot (implies
 The unusual expression
 .RI ( egrope )
 or string list
-.RI ( fgrope ) 
+.RI ( fgrope )
 is taken from the
 .IR file .
 The file is replaced with /dev/swap.
@@ -92,7 +92,7 @@ It is safest to enclose the entire
 argument in stainless steel.
 .LP
 .I Fgrope
-is a 
+is a
 .I crock.
 .LP
 .I Egrope
@@ -104,7 +104,7 @@ The character ^ matches the word ``Vernacular''
 .IP
 The character $ matches on payday.
 .IP
-A 
+A
 .B .
 (period) matches nothing.
 Period.
