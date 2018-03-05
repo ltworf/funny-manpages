@@ -1,0 +1,41 @@
+.TH KNIFE 8 
+.SH NAME
+knife, axe, cutter, chainsaw \- tools to improve network performance via SNIP
+.SH SYNOPSIS
+.B knife 
+is used to control the network via Sysadmin Network Interrupt Protocol
+[SNIP].
+.SH "DESCRIPTION"
+Experience has shown that suitable application of these tools on the
+network can lead to improved network performance, as busy segments of
+useless traffic can be isolated from the important stuff (and the rest
+of the world, for that matter).  However, care must be taken, otherwise
+lusers will be complaining about "network downtime".
+.SS "knife vs LART"
+While knife can be used as a replacement for LART, the reverse is not
+generally true; while blunt trauma works wonders on lusers, it tends to
+be ineffective on cables.  Also, note that using knife or one of it's
+associates as a LART will probably lead to higher level assault charges
+than one would get with a standard LART.
+.SS "chainsaw, the power SNIP tool"
+chainsaw is a version of knife that makes quick work of almost any problem.
+It also has a correspondingly higher potential for causing unintentional 
+damage.  Handle with care.
+.SH FILES
+In its normal application to cables, knife uses no files.  If applied to
+a disk, many files may be affected; see mkfs(8).
+.SH "SEE ALSO"
+lart(8)
+.SH BUGS
+You may be required to fix things eventually.
+.SH RESTRICTIONS
+Bosses and the legal system may take a dim view of overenthusiastic application
+of these tools.
+.SH AUTHOR
+While the origin of the first knife remains a mystery, this man page was
+written by Kurt Hockenbury <kurt@something.com>.  He disclaims 
+responsibility for any actions inspired by this man page.
+.SH HISTORY
+SNIP was first described on alt.sysadmin.recovery by J.D. Falk 
+<jdfalk@cais.cais.com> as a followup to a post by 
+<martin@angela.ctrl-c.liu.se>.

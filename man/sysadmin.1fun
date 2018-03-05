@@ -1,0 +1,87 @@
+.\" Written by Abby Franquement-Guillory (abbyfg@tezcat.com).
+.\" Convered to troff by Eric Pederson (eric@winternet.com).
+.TH SYSADMIN 1 "25 September 1995"
+.SH NAME
+sysadmin \- responsible for everything imaginable that may
+or may not have to do with the system you're
+using.  Contraction of "system" and "administrator"
+.SH SYNOPSIS
+.B sysadmin [\-ab] [\-cd] [\-ef] etc......
+.SH DESCRIPTION
+.LP
+.B sysadmin
+takes care of everything, is generally harangued, must
+be supplied with coffee, chocolate, and alcohol in order to
+function properly, cannot be exposed to direct sunlight, and must
+not be allowed to have a life.
+.LP
+.B sysadmin
+is not intended as a user interface routine; other
+programs provide user-friendly front ends; 
+.B sysadmin
+is used
+by everyone who can track him [her] down.
+.LP
+With no flags, 
+.B sysadmin 
+reads its standard input up to an 
+EOF, or a line which 
+.B sysadmin 
+wishes to parse, and then
+proceeds to ignore it entirely and read news all day. When
+invoked with the \-w option, 
+.B sysadmin 
+reads standard input
+and responds according to terms of job description.
+.SH OPTIONS
+.TP
+-bofh
+Go into Bastard Operator From Hell mode.
+This option causes sysadmin to use tools
+stored in the /usr/lib/bofh directory to
+parse the standard input and route user
+tasks appropriately.
+.TP
+-cd
+causes sysadmin to become caffeine-deprived,
+resulting in system slowdowns.
+.TP
+-b
+causes the sysadmin to function normally
+while augmenting the standard input with
+beer(5).  Can be used with the \-t option
+as well, depending upon which version of
+.B sysadmin 
+you are running.
+.TP
+-t
+causes the sysadmin to smoke tobacco, which
+can result in significant performance
+improvement, provided you are running the
+correct version of sysadmin.
+.TP
+-Cfile
+Specify an alternate configuration file
+(sysadmin.cf is the standard).
+.TP
+-dX
+set debuggin value to X.
+.TP
+-fFullname
+Set the full name of the sysadmin.
+.TP
+-Bf
+Create the sysadmin.cf configuration 
+freeze file.
+.TP
+-lname
+Sets the name of the "luser" person (that
+is, originator of a given request). -l can
+only be used by "trusted" users (who are
+listed in sysadmin.cf).
+.SH NOTES
+The \-t option should not be used with a version of sysadmin
+which is not capable of parsing tobacco input.  Though the
+functionality of this command may seem similar to the \-b
+option, it should not be confused with that or the related
+\-c option.

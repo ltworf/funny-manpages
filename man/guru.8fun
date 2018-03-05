@@ -1,0 +1,69 @@
+.TH GURU 8 "" "UNIX Programmer's Manual"
+.SH NAME
+guru \- System administration
+.SH SYNOPSIS
+.B guru
+[
+.B -e
+.I program
+] [
+.B -f 
+] [
+.B -p
+.I target
+]
+.SH DESCRIPTION
+guru is a sophisticated program synthesis and system
+maintenance tool developed after midnight in numerous
+university computing labs.
+It is based on the famous LISP Hacker system, used to develop AI
+programs on TENEX.
+guru reads a problem description from the standard input.
+An innovative and occasionally correct solution is generated and
+written to the standard output.
+Typically, guru is invoked repeatedly until an acceptable solution is
+generated or the user community has learned to live with the problem.
+.PP
+The bugreport mechanism sometimes invokes guru.
+In this case guru executes at a priority inversely proportional to the
+reported urgency of the bug.
+Feature enhancements run at high priority whereas critical problems are
+fixed only when the machine would otherwise be idle.
+.PP
+If the standard input is empty, guru uses its program synthesis
+capabilities to generate a selection of screen editors, X widgets,
+compilers, sundry games and the occasional diatribe.
+.PP
+.SH OPTIONS
+.TP 8
+.BI \-e " program"
+New features are added to an existing program.
+This option should be used with caution as the enhanced program may
+behave unpredictably or not at all.
+.TP 8
+.B -f
+Reconstructs filesystems after a crash.
+.TP 8
+.BI \-p " target"
+Ports the entire system on which guru is executing to target, preferably
+a RISC machine.
+This is an extremely time consuming operation and is not guaranteed to
+terminate.
+.PP
+If more than one option is specified, guru may thrash.
+Each copy of guru has its own set of unique, additional and
+undocumented options.
+.SH "SEE ALSO"
+YAPS: Yet another Program Synthesiser by S C Johnson.
+.SH NOTES
+Inherent design limitations prevent guru from synthesising comments.
+The programs generated are undocumented.
+The lucidity, politeness, relevance and language of the occasional
+diatribe vary considerably.
+.PP
+The only diagnostic is an occasional ``I deserve a raise'' \- 
+which may be ignored albeit doing so may provoke ``I resign'' \-
+an unrecoverable error.
+.PP
+Sending the output of one guru into another can produce quite
+startling results.

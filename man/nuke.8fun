@@ -1,0 +1,49 @@
+.TH NUKE 8 "13 October 1991" "UNIX"
+.IX "nuke" "" "\fLnuke\fP \(em launch nuclear weapons at mapped USENET sites"
+.SH NAME
+nuke \- launch nuclear weapons at mapped USENET sites
+.SH SYNOPSIS
+\fB/etc/nuke\fR [\fB-y \fIyield\fR] [\fB-a \fIheight\fR] [\fB-hcm\fR] \fIsitename...\fR
+.SH DESCRIPTION
+.I Nuke
+employs the `missile coordinate' fields in the USENET map database and
+Internet connections to a server interfaced with AUTOVON to lob
+nuclear weapons at other UNIX sites, specified by name.  The default
+warhead is a single 25KT groundburst tac nuke; options support other
+combinations of warhead size, type and deployment.
+
+The -y option specifies a yield.  The argument must be a number
+suffixed by K or M, for kiloton or megaton respectively.  Yield
+arguments above 255M are quietly ignored.
+
+The -a option specifies an air-burst height in meters.
+
+The -h option specifies thermonuclear (hydrogen) weapons.
+
+The -c option specifies cobalt-jacketed warheads for permanent site
+interdiction.
+
+The -m option, useful with multiple-site
+.I nuke
+calls, invokes code which optimizes delivery using MIRVed warheads to
+minimize launches.
+
+In accordance with the normal UNIX design philosophy
+.I nuke
+does not prevent you from nuking yourself.
+.SH FILES
+.TP 2.5i
+.I /usr/lib/maps/*
+USENET map file database
+.SH BUGS
+If a target site has given only nearest-city coordinates in its map
+entry, incorrect targeting and significant collateral casualties may
+result.
+
+Heavy use of
+.I nuke
+may cause EMP effects which interfere with Internet service.
+.SH NOTE
+This command is restricted to super-users only.
+.SH AUTHOR
+Eric S. Raymond <esr@thyrsus.com>

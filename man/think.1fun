@@ -1,0 +1,59 @@
+.TH THINK 1 "April 5, 1996" "think version 1.0"
+.SH NAME
+think \- you don't have to think, the computer can think for you
+.SH SYNOPSIS
+.B think
+[ \-\fBdetach\fP ]
+.SH DESCRIPTION
+\fIThink\fP simulates a thinking brain.
+.LP
+This can be useful if someone is not wanting to think at invocation time
+or if someone is needing some thinking about something.  It can also be helpful
+if someone's brain is not working correctly at invocation time.
+.LP
+When invoked, \fIthink\fP will go ahead and look at all of the commands
+and keystrokes that a user has made during the current login session.
+\fIThink\fP will then look at what files the user has.  From this and what
+level the user is listed at in the file /usr/lib/think, \fIthink\fP will
+figure out what the user was trying to do when \fIthink\fP was invoked.
+.SH DEVICES
+The process that \fIthink\fP uses to help a user is greatly aided if the
+user is wearing a brain interface bus (bib) device.  A bib device is normally
+worn on the head, and if being used, then \fIthink\fP will try to see what was
+going through the users head at the time of invocation.  After \fIthink\fP
+does this, it will send electric signals to the users brain, causing the
+user to type in whatever keystrokes are necessary to accomplish the task
+that he/she doesn't want to think about.
+.SH OPTIONS
+.TP
+\-\fBdetach\fP
+also known as "Must mother do all of your thinking for you?"\-mode.
+This options causes \fIthink\fP to run in the background as a daemon that
+watches for users who look like they may need assistance.  When a user is
+found to be exercising cluelessness, \fIthink\fP will lock up their keyboard
+and will proceed to execute what seems to be the most likely sequence of
+commands that the user had intended to execute.  This flag may only be used
+by the super\-user.
+.SH FILES
+.TP
+.B /dev/brain
+bib device special file.
+.TP
+.B /usr/lib/think
+file to indicate various user abilities.  The format of this file is a
+username on each line followed by some whitspace and then a number.  The
+higher the number for a given user, the more likely \fIthink\fP is to assume
+that that user knows what he/she is doing.  Unfortunately, what \fIthink\fP
+considers a large number will vary with usage.
+.SH BUGS
+If a user is using a bib device and actually lacks a brain of their own, then
+there is a high risk that \fIthink\fP will take over their (non-existent) minds.
+This has the upshot that someone other than the user will have to stop the
+program.  (Perhaps this is a feature.)
+.LP
+It may illegal in some areas to force users to wear bib devices.
+.SH AUTHOR
+This man page was written by John Guthrie <guthrie@math.upenn.edu> with
+suggestions from Kevin Whyte <kwhyte@math.upenn.edu> for the
+alt.sysadmin.recovery man page collection.
+

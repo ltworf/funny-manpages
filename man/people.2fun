@@ -1,0 +1,83 @@
+.TH people 2 "Release 0.01 alpha"
+.UC 4
+.SH NAME
+people \- fetch a structure containing all ttys, whose owner behaves like a human
+.SH SYNOPSIS
+.nf
+.B #include <sys/people.h>
+.B #include <asr.h>
+.sp
+.BI "int people (struct ppl_tty **" ttys );
+.fi
+.SH DESCRIPTION
+The
+.B people
+function fetches a short description of every tty,
+whose coupled process behaves as an actual human.
+.PP
+It returns a newly malloc'ed array with just enough elements to
+contain all elements needed for this.
+.PP
+The \fIstruct ppl_tty\fP is declared as:
+.nf
+struct ppl_tty {
+  char tty_path[MAX_PATH_LENGTH];
+  int is_erratic;
+  int uses_jobcontrol;
+  int is_amoron;
+  int is_aluser;
+  int has_aclue;
+  pid_t pgrp_leader;
+};
+.fi
+.SH RETURN VALUES
+On success
+.B people
+returns the number of elements in
+.I ttys
+, on failure it returns \fI\-1\fP and
+.I errno
+is set to an appropriate value.
+.SH ERRORS
+.TP 0.8i
+.B ENOENT
+There are no human-behavioured processes on the system
+.TP
+.B EBUSY
+The kernel is busy and will not stand this silly behaviour. Caution to
+call
+.B people
+again, from the same process, as the kernel might kill it right away.
+.TP
+.B ENODEV
+See \fIENOENT\fP above.
+.TP
+.B EUSERS
+Too many of the people found were lusers. The cut-off for this error
+is system dependent, but is usually about 3.
+.SH EXAMPLE
+.nf
+#include <sys/people.h>
+#include <asr.h>
+#include <signal.h>
+
+int
+main (int argc, char **argv)
+{
+  struct ppl_tty **ttys;
+  int rv,c;
+
+  rv=people(ttys);
+  if (rv!=-1) {
+    for (c=0;c<rv;c++)
+      if ((ttys[c].is_amoron)||(ttys[c].is_aluser)) {
+        kill(-(ttys[c].pgrp_leader),SIGKILL);
+      }
+  } else {
+    ; /* Handle errors in a graceful way... */
+  }
+}
+.fi
+.SH AUTHOR
+This man page was written by Ingvar Mattsson, as a contribution to the
+a.s.r man page collection.

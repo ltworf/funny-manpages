@@ -1,0 +1,87 @@
+.TH normality 5 "Release 0.001 alpha"
+.UC 4
+.SH NAME
+normality \- definition of what types of normalities different users may have.
+.SH SYNOPSIS
+/etc/normality
+.SH DESCRIPTION
+.LP
+The
+.B normality
+configuration file has a rather simple syntax, as shown in the diagram
+in the next section. Some things to remember is that the
+.B normality
+file's influence is inversely proportional to the user's cluefulness
+and that, in certain cirumstances, modification of the
+.B normality
+file can and will be considered immoral.
+.SH NORMALITY GRAMMAR
+.nf
+\fI<normality file>\fP := <normality file> <line> |
+                    ;
+\fI<line>\fP := <normality type> ': ' <userlist> |
+          <normality type> '! ' <userlist> |
+          <normality type> '= ' <normality tags> |
+          <comment>
+\fI<normality type>\fP := [A-Z][a-zA-Z0-9]+
+\fI<userlist>\fP := <username> ', ' <userlist> ';\n' |
+              <username> ';\n'
+\fI<normality tags>\fP := <normality tag> ', ' <normality tags> ';\n' |
+                    <normality tag> ';\n'
+\fI<normality tag>\fP := 'marriage' |
+                   'love-relation' |
+                   'nice-job' |
+                   'money' |
+                   'spare-time' |
+                   'friends' |
+                   'no-pager' |
+                   'vacation'
+\fI<comment>\fP := '#' .* '\n'
+.fi
+.SH SEMANTICS
+It is expected that you specify all normality types before you start
+assigning (or disassigning) users to (or from) them. That is so the
+system can do an easier consistency check of the specification.
+.PP
+Let's say that we have a system with three normality types, \fIfoo\fP,
+\fIbar\fP and \fIgazonk\fP and two users, \fBcucumber\fP and
+\fBonion\fP.
+.PP
+Now, a line like "\fIfoo\fP! \fBonion\fP;" would \fIexclude\fP
+\fBonion\fP from having any of the real-life things specified by the
+\fIfoo\fP type, even if that (or those) things appear in
+another normality type. So, the disallow syntax overrides the allow
+syntax (specified by "<type>: <username>...").
+.PP
+There is always an implicit type named ``\fIall\fP'', that contains
+all normality tags.
+.PP
+For all system administrators, you have an implicit rule, \fI"all!
+asr"\fP.
+.SH EXAMPLES
+.nf
+# Normality file for a sad system
+# Our users are onion, cucumber, jdoe, jrl and washu
+animetype= love-relation, nice-job, friends, spare-time;
+notworst= love-relation, nice-job, friends;
+sysadm= friends;
+# All normality types we will use are declared
+# Now let's do the magic stuff...
+all: jdoe, jrl;
+animetype: washu;
+sysadm: cucumber;
+all! onion;
+# Now, this is fairly easy, OK?
+.fi
+.SH WARNINGS AND BUGS
+This file messes with the real world, so a bit of caution is
+recommended. Newer versions of the \fBchastise\fP(3) library function
+modifies this file on-the-fly.
+.PP
+Has a tendecy to create small discontinuities in the velvet of reality
+whenever there are syntax errors in the \fBnormality\fP file.
+.SH AUTHOR
+This sick idea was put down in *roff format by Ingvar Mattsson, as a
+contribution to the
+.B alt.sysadmin.recovery
+man page collection.

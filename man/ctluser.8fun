@@ -1,0 +1,129 @@
+.TH CTLUSER 8 "19 October 1995"
+.SH NAME
+ctluser \- control lusers
+.SH SYNOPSIS
+.B ctluser
+[
+.B \-h
+]
+[
+.B \-m
+]
+.I command
+[
+.I argument...
+]
+.SH DESCRIPTION
+.I Ctluser
+sends a message to the control channel of a given
+.IR luser (8)
+This command can only be run by the
+.IR sysadmin (1)
+.PP
+In the normal mode of behavior, the message is sent to the luser's brain,
+which then performs the requested action and sends back a reply with a text
+message and the exit code for
+.IR ctluser .
+If the luser's brain successfully performed the command,
+.I ctluser
+will exit with a status of zero and print the reply on standard output.
+.PP
+The ``\-m'' flag is used to display an MPEG of the results of the given command
+on the console of the
+.IR sysadmin (1)
+.IR Note
+that this requires the
+.IR sysadmin (1)
+to be running an X server.
+.PP
+To see a command summary, use the ``\-h'' flag.
+If a command is included when
+.I ctluser
+is invoked with the ``\-h'' flag, then only the usage for that command
+will be given.
+.PP
+The complete list of commands follows.
+Note that all commands have a fixed number of arguments.
+If a parameter can be an empty string, then it is necessary to
+specify it as two adjacent quotes, like "".
+.TP
+.BI addhist " <entry>"
+Add an entry to the luser's employment record.
+.TP
+.BI allow " reason"
+Allow a luser to use the computer system again.
+The
+.I reason
+must be the same text given with an earlier ``reject'' command.
+.BR Note
+that this command is currently not implemented.
+.TP
+.BI begin " name"
+Begin a new
+.IR luser (1)
+with the given
+.IR file .
+.BR Note
+that this command is currently not implemented.
+.TP
+.BI cancel " pid"
+Causes a process of a luser to be killed
+.TP
+.BI changegroup " group"
+Changes a luser from their current workgroup to the one specified.
+.TP
+.B checkfile
+Forces a user to return to a paper based system
+.TP
+.BI drop
+Causes a large mass to drop onto the luser from a great height.
+.TP
+.B flushlogs
+Destorys all logs of the actions done by the
+.IR sysadmin (1)
+to the luser.
+.TP
+.BI go " reason"
+The luser is fired for the given reason.
+.TP
+.BI hangup 
+Makes the luser hang themselves
+.TP
+.BI mode 
+Displays the operating mode of the luser
+.TP
+.BI newgroup " group"
+Causes a luser to make their own newgroup up
+.TP
+.BI pause " thought"
+Makes the luser pause for the given thought.
+.IR Note
+that this may cause some lusers to crash
+.TP
+.BI shutdown " reason"
+Makes the luser shutdown. This is essentially the same as killing them
+.TP
+.BI signal " sig"
+Sends the given signal to the luser
+.TP
+.BI throttle " reason"
+Causes the luser to throttle themselves
+.TP
+.BI trace " item flag"
+Gives the
+.IR sysadmin (1)
+information on what the luser is doing.
+.PP
+.SH BUGS
+.I Ctluser
+sometimes has the effect of lusers complaining the to management. The use of
+.IR bosskill (8)
+maybe required at this point.
+.SH HISTORY
+Written by Simon Burr <simes@tcp.co.uk>. Based upon the manual page for
+.IR ctlinnd (8),
+part of the InterNetNews system.
+.SH SEE ALSO
+luser(1),
+sysadmin(1),
+bosskill(8)

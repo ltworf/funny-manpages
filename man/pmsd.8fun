@@ -1,0 +1,59 @@
+.\" Written by Eric L. Pederson <eric@bofh.org.uk> for the
+.\" entertainment of the denizens of alt.sysadmin.recovery
+.TH PMSD 8 "25 March 1996"
+.SH NAME
+pmsd \- Periodically Manic System Daemon. Manages the bizzare and sometimes
+unexplainable behavior exhibited by computers.
+.SH SYNOPSIS
+.B pmsd [\-bcfmp]
+.SH DESCRIPTION
+.LP
+.B pmsd 
+is a rogue daemon that is spawned on a semi-regular schedule by init(8).
+Most of the unusual and quirky behavior associated with misbehaving
+computers can be attributed to pmsd.
+.LP
+pmsd has a number of command-line options, invoked at run-time by init(8).
+The ps(1) command will occasionally display the current options, but only
+if pmsd feels like revealing them. This is usually not the case. pmsd can
+be manually invoked by the pms(8) command. Make sure there is not a pmsd
+process already running when you use pms(8); you don't want to be on a system
+with multiple instances of pmsd running.
+.LP
+With no flags, 
+.B pmsd 
+runs with the default -m option, and any others it feels like using.
+.SH OPTIONS
+.TP
+.B \-b
+Bloat. Files randomly grow in size, filling up filesystems and causing
+quotas to be exceeded.
+.TP
+.B \-c
+Craving. System becomes hungry, eating magnetic tapes, CD-ROM discs, floppies,
+and anything else a hapless user loads into a removable media drive.
+.TP
+.B \-f
+Fatigue. System will pause for a random period of time. It is important to
+leave the system alone during this time. Attempts to coax the machine into
+normal operation could cause the spontaneous activation of all command-line
+switches. This is to be avoided.
+.TP
+.B \-m
+Mood swings. Process priorities and nice values are altered randomly. Swapping
+usually occurs with no warning, even when memory is available. This is the
+default behavior.
+.TP
+.B \-p
+Peeved. One or more users are selected as targets of the system's anger.
+Files are deleted, e-mail copied to /etc/motd, and any Usenet articles posted
+by the targets are crossposted to misc.test and alt.flame.
+.SH NOTES
+When pmsd is invoked by using the pms(8) command, pmsd ignores any
+command-line switches and does what it damned well pleases.
+.SH SEE ALSO
+pms(8)
+.SH BUGS
+There are no bugs; how could you ask that?
+.SH HISTORY
+Written by Eric L. Pederson <eric@bofh.org.uk>.

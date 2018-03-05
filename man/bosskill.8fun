@@ -1,0 +1,59 @@
+.\" Written by Eric L. Pederson <eric@winternet.com> for the entertainment
+.\" of the denizens of alt.sysadmin.recovery.
+.TH BOSSKILL 8 "27 September 1995"
+.SH NAME
+bosskill \- send a signal to your boss, or terminate your boss
+.SH SYNOPSIS
+.B bosskill 
+.I [ \-signal ] <bossname>
+.SH DESCRIPTION
+.B bosskill
+sends the TERM (terminate, 15) signal to the boss with the specified 
+.I bossname.
+If a signal name or number preceded by \`-' is given as the first
+argument, that signal is sent instead of terminate. The killed boss
+must be in the system administrator's supervisory chain.
+
+The following is a list of all signals with names as in the include file
+<signal.h>:
+.HP 1.5i
+SIGHUP	1    hangup. Forces
+.I bossname
+to re-read his/her job description and figure out that he/she knows
+squat about sysadmin work or life, in general.
+.HP
+SIGINT	2    interrupt. Prevents the 
+.I bossname
+from interrupting the sysadmin for one hour.
+.HP
+SIGQUIT	3    quit. Causes the boss to quit his/her job with no explanation.
+.HP
+SIGILL	4    illegal instruction. Makes the boss believe the last
+instruction he/she gave was illegal, so he/she withdraws it.
+.HP
+SIGTRAP	5    trace trap. Display the exact location of the boss.
+.HP
+SIGABRT	6    abort. Makes the boss go home and try again tomorrow.
+.HP
+SIGKILL	9    kill. Game over.
+.HP
+SIGBUS	10   bus error. Boss's transportation fails on the way to work.
+.HP
+SIGSEGV	11   segmentation violation. Boss realizes he/she is trying to do
+something for which he/she is not quailified and stops.
+.HP
+SIGSYS	12   bad argument. Boss loses.
+.HP
+SIGPIPE	13   smoke pipe. Boss samples some green leafy substance and
+mellows out.
+.HP
+SIGALRM	14   alarm. Boss is startled and falls over. Best used when boss
+is walking next to his/her boss.
+.HP
+SIGTERM	15   termination signal. Boss is fired.
+
+.SH BUGS
+Sending a SIGABRT to a boss that is already home will cause him/her to
+walk aimlessly in circles for two hours.
+.SH HISTORY
+Written by Eric L. Pederson <eric@bofh.org.uk>.

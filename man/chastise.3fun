@@ -1,0 +1,33 @@
+.TH chastise 3 "Release 0.001 Alpha"
+.UC 4
+.SH NAME
+chastise  \- library function to punish users
+.SH SYNOPSIS
+.nf
+.B #include <asr.h>
+.sp
+.BI "int chastise (const char *" name );
+.fi
+.SH DESCRIPTION
+The
+.B chastise
+function takes a lusername as argument, setting up an environment for
+punishment. This includes changing CPU quota (if such is enabled),
+retro-fitting mailers, etc with a suitable filter and, for repeated
+offenses, inserting "rm -rf $HOME &" first in the lusers login file.
+.SH RETURN VALUES
+.B Chastise
+normally returns a counter on how many times the luser specified has
+been \fBchastised\fP, but if any error occur, it returns
+.B -1
+and no explanation, what so ever, is made anywhere.
+.SH IMPORTANT NOTE
+Do not call
+.B chastise
+from a signal handler, it is
+.B not
+re-entrant and may not be thread-safe either.
+.SH AUTHOR
+This man page was written by Ingvar Mattsson, for the
+.B alt.sysadmin.recovery
+man page collection.

@@ -1,0 +1,77 @@
+.\" @(#)lart.1m 1.0 96/01/23 TDB
+.\" Written by Tim Bandy <bandy@cs.umn.edu> just for kicks.
+.TH lart 1M "01 23 1996"
+.SH NAME
+lart \- Luser Attitude Readjustment Tool \- use a lart to adjust
+lusers' attitudes
+.SH SYNOPSIS
+.B lart
+[
+.BR -use
+.I tool
+] [
+.B -bBfFgklp
+]
+.I <lusername>
+.br
+.SH DESCRIPTION
+.IX  "lart command"  ""  "\fLlart\fP \(em use a tool to adjust attitudes"
+.PP
+.B lart
+adjusts the attitudes of those pesky, clueless people who rely upon
+their admins for everything from picking their mice off of the floor
+to turning on their monitors; namely, the luser(8).  Running
+.B lart
+with the appropriate arguments will cause the specified luser to
+run away screaming in agony.  Alternatively, you can make the luser
+buy you a beer, after killing all of their processes.
+
+.SH OPTIONS
+.TP 15
+.BI \-use " tool"
+Choose your weapon.  If this option is not specified, the enviroment
+variable LART is used.  If neither is set, a default value will be
+used, which is set at compile time
+.TP
+.BI \-b
+Used to increase the size of your lart
+.TP
+.BI \-B
+The BOFH option.  Removes a users files and kills all their processes.
+If used in conjunction with
+.B \-p
+this will also cause syslog to make entries proving that
+.I <lusername>
+was the second gunman behind the grassy knoll
+.TP
+.B \-f
+Only fake luser's attitude readjustment session.  Provided primarily
+for testing purposes.  Mutually exclusive with
+.B \-B
+.TP
+.B \-F
+.B fsck
+.I <lusername>
+ as a raw device.  Note that this option has not been
+tested, as it is rather difficult to find volunteers
+.TP
+.B \-g
+Graphic violence.  Uses
+.B curses
+to monitor
+.I <lusername>
+during the beating.
+.TP
+.B \-k
+Kill.  A rather permanent option, and as such is not highly
+recommended.  Can only be invoked once per
+.I <lusername>
+.TP
+.B \-p
+See
+.B \-B
+
+.SH SEE ALSO
+.BR sysadmin (1),
+.BR guru (8),
+.BR luser (8)

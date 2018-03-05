@@ -1,0 +1,69 @@
+.\" Written by Eric L. Pederson <eric@winternet.com> for the
+.\" entertainment of the denizens of alt.sysadmin.recovery
+.TH LUSER 8 "25 September 1995"
+.SH NAME
+luser \- process to control the clueless individuals
+who (mis)use computer systems, peripheral devices
+and system administrators. Word play on "loser" and "user".
+.SH SYNOPSIS
+.B luser [\-d] [\-g<level>] [\-s] 
+.I <lusername>
+.SH DESCRIPTION
+.LP
+.B luser 
+is the primary tool a system administrator uses to
+manage end-user requests. This powerful tool can actually cause
+the specified user to perform actions as specified by the flags.
+.LP
+With no flags, 
+.B luser 
+deletes every running process owned by 
+the specified 
+.I <lusername>.
+.SH OPTIONS
+.TP
+.B \-d
+Disk reclamation mode. Remove all files
+in the home directory of 
+.I <lusername>.
+.TP
+.B \-g<level>
+Grovel mode. Causes the specified luser to
+make an act of contrition to the sysadmin
+for past sins. The <level> indicates the
+severity of the contrition:
+.TP
+LEVEL
+.TP
+0
+User makes a sincere apology and promises
+to never do it again.
+.TP
+1
+User buys sysadmin a large quantity of sysadmin's
+favorite beverage.
+.TP
+2
+User signs over ownership of his/her car to sysadmin.
+.TP
+3
+User resigns from the company after writing a long
+letter of apology detailing his/her failings.
+.TP
+4
+User commits ritual suicide by sucking on a power strip and
+grounding himself to a conduit.
+.SH NOTES
+Sysadmins are encouraged to use the \-s option as a way to
+smarten up the world's user base. Use the \-g option at level 4
+outside the confines of the machine room. The more lusers that
+witness the act, the better.
+.SH SEE ALSO
+sysadmin(1)
+.SH BUGS
+Occasionally, the luser may survive the effects of 
+.B luser \-g4.
+In that event, a second invocation of the command will usually
+prove to be fatal.
+.SH HISTORY
+Written by Eric L. Pederson <eric@bofh.org.uk>.

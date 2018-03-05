@@ -1,0 +1,32 @@
+.TH slave 1 "Release 0.01 alpha"
+.UC 4
+.SH NAME
+slave \- a semi-interactive interactive command for the dirty work
+.SH SYNOPSIS
+.B slave
+[ \fIcommand\fP ]
+.br
+.B slave
+-f
+.SH DESCRIPTION
+The purpose of the \fIslave\fP command is to do all those small
+things around the computer that one never finds the time for.
+.LP
+One typical use for the \fIslave\fP command is to change the toner in
+one's laser printer. The interface for the \fIslave\fP command is kept
+simple, mainly to keep down the complexity of the internal parser.
+.SH THE OPTION
+.TP
+\-\fIf\fP
+Send a rapid succession of \fISIGHUP\fPs to \fIslave\fP, mainly used
+when one needs to blow off a little steam.
+.SH THE COMMANDS
+Almost any phrase in pidgin English is acceptable input to the
+\fIslave\fP program, but care should be taken to keep grammatical
+structure on an easy level, so not to confuse the poor program.
+.SH BUGS
+This program violates many standards and ethics, most notably the UN's
+Human Rights (as if they were extendable to programs...)
+.SH AUTHOR
+This man page is written by Ingvar Mattsson, 1996, in an effort to
+extend the \fIalt.sysadmin.recovery\fP collection of man pages.

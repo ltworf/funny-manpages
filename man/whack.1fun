@@ -1,0 +1,59 @@
+.\" Written by Eric L. Pederson <eric@winternet.com> for the entertainment
+.\" of the denizens of alt.sysadmin.recovery.
+.TH WHACK 1 "28 September 1995"
+.SH NAME
+whack \- mangle requests to a printer or damage a printer
+.SH SYNOPSIS
+.B whack
+[-h | -v] [-i] [-w]
+.I ids
+.LP
+.B whack
+[-j] [-v] [-s] [-w]
+.I printers
+.SH DESCRIPTION
+.B whack
+mangles line printer requests or damages line printers.
+When the first form of the command is used, the printed output of the
+job is mangled as specified by the options. When the second form of
+the command is used, the printer itself is damaged as specified by
+the options.
+.SH OPTIONS
+.LP
+.TP 10
+.B \-h
+Horizontal. Make the output run across the page horizontally, ignoring
+linefeeds and other form movement characters or embedded commands.
+.TP
+.B \-v
+Vertical. Make the output run vertically in one column (the current column) down
+the paper, ignoring any form movement characters or embedded commands.
+.TP
+.B \-i
+ISO mode. Select, at random, a different ISO code set to use while printing
+the rest of the job.
+.TP
+.B \-w
+Write a taunting message on the user's terminal after the
+jobs have been whacked.
+If the user is not logged in locally,
+then mail will be sent instead.
+.TP
+.B \-j
+Jam. Self-explanitory.
+.TP
+.B \-v
+Voltage surge. Send a voltage spike down the transmit lead(s) of the printer.
+Physical contact with the printer should be avoided while using the \-v option.
+.TP
+.B \-s
+Spit. Causes the printer to rapidly eject it's paper load into the output bin.
+Depending upon the speed of the ejection, a few characters could actually
+print on each page.
+.SH FILES
+.PD 0
+.TP 20
+.B /etc/termcap
+.PD
+.SH HISTORY
+Written by Eric L. Pederson <eric@bofh.org.uk>.
