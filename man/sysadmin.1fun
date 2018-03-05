@@ -17,20 +17,20 @@ not be allowed to have a life.
 .LP
 .B sysadmin
 is not intended as a user interface routine; other
-programs provide user-friendly front ends; 
+programs provide user-friendly front ends;
 .B sysadmin
 is used
 by everyone who can track him [her] down.
 .LP
-With no flags, 
-.B sysadmin 
-reads its standard input up to an 
-EOF, or a line which 
-.B sysadmin 
+With no flags,
+.B sysadmin
+reads its standard input up to an
+EOF, or a line which
+.B sysadmin
 wishes to parse, and then
 proceeds to ignore it entirely and read news all day. When
-invoked with the \-w option, 
-.B sysadmin 
+invoked with the \-w option,
+.B sysadmin
 reads standard input
 and responds according to terms of job description.
 .SH OPTIONS
@@ -51,7 +51,7 @@ causes the sysadmin to function normally
 while augmenting the standard input with
 beer(5).  Can be used with the \-t option
 as well, depending upon which version of
-.B sysadmin 
+.B sysadmin
 you are running.
 .TP
 -t
@@ -71,7 +71,7 @@ set debuggin value to X.
 Set the full name of the sysadmin.
 .TP
 -Bf
-Create the sysadmin.cf configuration 
+Create the sysadmin.cf configuration
 freeze file.
 .TP
 -lname

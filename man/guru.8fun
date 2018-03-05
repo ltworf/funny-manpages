@@ -7,7 +7,7 @@ guru \- System administration
 .B -e
 .I program
 ] [
-.B -f 
+.B -f
 ] [
 .B -p
 .I target
@@ -61,7 +61,7 @@ The programs generated are undocumented.
 The lucidity, politeness, relevance and language of the occasional
 diatribe vary considerably.
 .PP
-The only diagnostic is an occasional ``I deserve a raise'' \- 
+The only diagnostic is an occasional ``I deserve a raise'' \-
 which may be ignored albeit doing so may provoke ``I resign'' \-
 an unrecoverable error.
 .PP

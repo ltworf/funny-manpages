@@ -86,10 +86,10 @@ to the luser.
 .BI go " reason"
 The luser is fired for the given reason.
 .TP
-.BI hangup 
+.BI hangup
 Makes the luser hang themselves
 .TP
-.BI mode 
+.BI mode
 Displays the operating mode of the luser
 .TP
 .BI newgroup " group"

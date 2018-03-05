@@ -4,11 +4,11 @@
 .SH NAME
 bosskill \- send a signal to your boss, or terminate your boss
 .SH SYNOPSIS
-.B bosskill 
+.B bosskill
 .I [ \-signal ] <bossname>
 .SH DESCRIPTION
 .B bosskill
-sends the TERM (terminate, 15) signal to the boss with the specified 
+sends the TERM (terminate, 15) signal to the boss with the specified
 .I bossname.
 If a signal name or number preceded by \`-' is given as the first
 argument, that signal is sent instead of terminate. The killed boss
@@ -22,7 +22,7 @@ SIGHUP	1    hangup. Forces
 to re-read his/her job description and figure out that he/she knows
 squat about sysadmin work or life, in general.
 .HP
-SIGINT	2    interrupt. Prevents the 
+SIGINT	2    interrupt. Prevents the
 .I bossname
 from interrupting the sysadmin for one hour.
 .HP

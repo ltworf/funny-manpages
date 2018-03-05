@@ -8,7 +8,7 @@ unexplainable behavior exhibited by computers.
 .B pmsd [\-bcfmp]
 .SH DESCRIPTION
 .LP
-.B pmsd 
+.B pmsd
 is a rogue daemon that is spawned on a semi-regular schedule by init(8).
 Most of the unusual and quirky behavior associated with misbehaving
 computers can be attributed to pmsd.
@@ -20,8 +20,8 @@ be manually invoked by the pms(8) command. Make sure there is not a pmsd
 process already running when you use pms(8); you don't want to be on a system
 with multiple instances of pmsd running.
 .LP
-With no flags, 
-.B pmsd 
+With no flags,
+.B pmsd
 runs with the default -m option, and any others it feels like using.
 .SH OPTIONS
 .TP

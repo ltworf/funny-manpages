@@ -6,25 +6,25 @@ luser \- process to control the clueless individuals
 who (mis)use computer systems, peripheral devices
 and system administrators. Word play on "loser" and "user".
 .SH SYNOPSIS
-.B luser [\-d] [\-g<level>] [\-s] 
+.B luser [\-d] [\-g<level>] [\-s]
 .I <lusername>
 .SH DESCRIPTION
 .LP
-.B luser 
+.B luser
 is the primary tool a system administrator uses to
 manage end-user requests. This powerful tool can actually cause
 the specified user to perform actions as specified by the flags.
 .LP
-With no flags, 
-.B luser 
-deletes every running process owned by 
-the specified 
+With no flags,
+.B luser
+deletes every running process owned by
+the specified
 .I <lusername>.
 .SH OPTIONS
 .TP
 .B \-d
 Disk reclamation mode. Remove all files
-in the home directory of 
+in the home directory of
 .I <lusername>.
 .TP
 .B \-g<level>
@@ -61,7 +61,7 @@ witness the act, the better.
 .SH SEE ALSO
 sysadmin(1)
 .SH BUGS
-Occasionally, the luser may survive the effects of 
+Occasionally, the luser may survive the effects of
 .B luser \-g4.
 In that event, a second invocation of the command will usually
 prove to be fatal.

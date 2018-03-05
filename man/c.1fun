@@ -5,10 +5,10 @@ c \- genericised soft drink generator (ie coffee, coke etc)
 .SH SYNOPSIS
 .B c
 .B [-s[number]]  [-m[type]]  [-e]  [-i]  [-T]  [-S amount]
-.B [--other=drink] 
+.B [--other=drink]
 .SH DESCRIPTION
-This manual page documents the  GNU  version  of 
-.B c. 
+This manual page documents the  GNU  version  of
+.B c.
 c is a genericised  soft  drinks  engine  designed to provide a stream
 of  the  desired  beverage on the standard output.    By  default, c
 makes coffee,  white, no sugar.  This is  a   historical  choice based
@@ -19,18 +19,18 @@ parsing by c extends only to syntax. Experiment at your own risk.
 .SH OPTIONS
 .TP
 .B \-s[number]
-Specifies the  number of sugars  desired.  If  this   
+Specifies the  number of sugars  desired.  If  this
 option is omitted, none will be included.
 
 Excessively large values will  result in unpleasant
 side effects,  including  rotting  teeth and excess
-weight. 
+weight.
 
 If this option is specified with no parameter, the default
 is one.
 .TP
 .B \-m[type]
-Determines  whether milk will  be used or not.  The  
+Determines  whether milk will  be used or not.  The
 default corresponds to the specification 'cold'.
 .I cold
 - Normal, cold milk
@@ -49,23 +49,23 @@ Use your imagination.
 
 .TP
 .B \-e
-Espresso  option.  High  pressure  steam  is forced    
+Espresso  option.  High  pressure  steam  is forced
 through fine ground dark beans for a stronger brew;
-careful  use of the -S  option  is advised to avoid   
+careful  use of the -S  option  is advised to avoid
 shaky hands and heart palpitations (see BUGS).
 .TP
 .B \-i
-Iced coffee. Self explanatory really...            
+Iced coffee. Self explanatory really...
 .TP
 .B \-T
 Turkish coffee.  The only  type of  coffee that  is
-boiled deliberately.  -s2  or more  recommended  to    
-avoid grimaces.  
+boiled deliberately.  -s2  or more  recommended  to
+avoid grimaces.
 .TP
 .B \-S[amount]
-Size  of the virtual 'mug'  to be filled. The scale  
-used is  fairly  arbitrary,  but should cover  most  
-cases...                                          
+Size  of the virtual 'mug'  to be filled. The scale
+used is  fairly  arbitrary,  but should cover  most
+cases...
 .I 1
 thimbleful
 
@@ -84,14 +84,14 @@ sysadmin mug
 .I 6
 bucket
 
-Use of -S 6 is contraindicated  for use with  n(1), due to  
-possible  damage  to t he  nasal  membranes,  and risk  of  
-drowning.  The default is 4; unless a beta version of  the 
+Use of -S 6 is contraindicated  for use with  n(1), due to
+possible  damage  to t he  nasal  membranes,  and risk  of
+drowning.  The default is 4; unless a beta version of  the
 OS is installed, when the default is 5.  If the beta is of
-Digital UNIX, 6 is the default; you'll need it.          
+Digital UNIX, 6 is the default; you'll need it.
 .TP
 .B \--other=drink
-Specify  a drink other  than coffee.  Use  of other 
+Specify  a drink other  than coffee.  Use  of other
 options  is   not  recommended;  the  behaviour  is
 unspecified!
 .SH BUGS
@@ -102,7 +102,7 @@ hands,  shortness  of  breath,  it is  suggested  that you
 discontinue  use.   A -d (decaf) option  was  included  in
 previous versions,  but was  removed  after  a  threatened
 litigation  arising  from an  unfortunate  practical  joke
-involving misuse. 
+involving misuse.
 .SH SEE ALSO
 n(1)
 .SH AUTHOR
