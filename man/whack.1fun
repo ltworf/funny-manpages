@@ -1,6 +1,6 @@
 .\" Written by Eric L. Pederson <eric@winternet.com> for the entertainment
 .\" of the denizens of alt.sysadmin.recovery.
-.TH WHACK 1 "28 September 1995"
+.TH WHACK 1fun "28 September 1995"
 .SH NAME
 whack \- mangle requests to a printer or damage a printer
 .SH SYNOPSIS

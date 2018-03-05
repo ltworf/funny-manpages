@@ -1,6 +1,6 @@
 .\" Written by Eric L. Pederson <eric@bofh.org.uk> for the
 .\" entertainment of the denizens of alt.sysadmin.recovery
-.TH PMSD 8 "25 March 1996"
+.TH PMSD 8fun "25 March 1996"
 .SH NAME
 pmsd \- Periodically Manic System Daemon. Manages the bizzare and sometimes
 unexplainable behavior exhibited by computers.

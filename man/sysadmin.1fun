@@ -1,6 +1,6 @@
 .\" Written by Abby Franquement-Guillory (abbyfg@tezcat.com).
 .\" Convered to troff by Eric Pederson (eric@winternet.com).
-.TH SYSADMIN 1 "25 September 1995"
+.TH SYSADMIN 1fun "25 September 1995"
 .SH NAME
 sysadmin \- responsible for everything imaginable that may
 or may not have to do with the system you're

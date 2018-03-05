@@ -1,4 +1,4 @@
-.TH people 2 "Release 0.01 alpha"
+.TH people 2fun "Release 0.01 alpha"
 .UC 4
 .SH NAME
 people \- fetch a structure containing all ttys, whose owner behaves like a human

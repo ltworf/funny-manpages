@@ -1,4 +1,4 @@
-.TH GURU 8 "" "UNIX Programmer's Manual"
+.TH GURU 8fun "" "UNIX Programmer's Manual"
 .SH NAME
 guru \- System administration
 .SH SYNOPSIS

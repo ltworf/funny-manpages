@@ -1,6 +1,6 @@
 .\" Written by Eric L. Pederson <eric@winternet.com> for the entertainment
 .\" of the denizens of alt.sysadmin.recovery.
-.TH BOSSKILL 8 "27 September 1995"
+.TH BOSSKILL 8fun "27 September 1995"
 .SH NAME
 bosskill \- send a signal to your boss, or terminate your boss
 .SH SYNOPSIS

@@ -1,6 +1,6 @@
 .\" Written by Eric L. Pederson <eric@winternet.com> for the
 .\" entertainment of the denizens of alt.sysadmin.recovery
-.TH LUSER 8 "25 September 1995"
+.TH LUSER 8fun "25 September 1995"
 .SH NAME
 luser \- process to control the clueless individuals
 who (mis)use computer systems, peripheral devices

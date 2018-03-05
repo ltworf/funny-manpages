@@ -1,6 +1,6 @@
 .\" @(#)lart.1m 1.0 96/01/23 TDB
 .\" Written by Tim Bandy <bandy@cs.umn.edu> just for kicks.
-.TH lart 1M "01 23 1996"
+.TH lart 1fun "01 23 1996"
 .SH NAME
 lart \- Luser Attitude Readjustment Tool \- use a lart to adjust
 lusers' attitudes

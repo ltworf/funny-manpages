@@ -1,5 +1,5 @@
 .\"
-.TH C 1 "May 27, 1997" "GNU Drink Utilities"
+.TH C 1fun "May 27, 1997" "GNU Drink Utilities"
 .SH NAME
 c \- genericised soft drink generator (ie coffee, coke etc)
 .SH SYNOPSIS

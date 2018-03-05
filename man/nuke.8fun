@@ -1,4 +1,4 @@
-.TH NUKE 8 "13 October 1991" "UNIX"
+.TH NUKE 8fun "13 October 1991" "UNIX"
 .IX "nuke" "" "\fLnuke\fP \(em launch nuclear weapons at mapped USENET sites"
 .SH NAME
 nuke \- launch nuclear weapons at mapped USENET sites
